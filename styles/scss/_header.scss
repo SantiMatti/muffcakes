@@ -1,0 +1,55 @@
+.body__header {
+    grid-area: header;
+    position: sticky; /*Se queda siempre visible arriba*/
+    top: 0;
+    padding: 0 1rem 0 1rem;
+}
+
+.header__nav {
+    border-radius: 1rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    background-color:#A37555;
+}
+
+nav ul {
+    border: solid #322623;
+    background-color: #603E33;
+    border-radius: 1rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul a {
+    color: #C6A37C;
+}
+ 
+nav li {
+    display: inline-block;
+    position:relative;
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
+nav ul a:hover {
+    background-color: #C6A37C;
+    color: #322623; /*Cambiar de color la letra cuando se esta sobre cada palabra*/
+}
+
+nav ul ul {
+    position: absolute;
+    display: none;
+}
+
+nav ul ul li {
+    display: block;
+}
+
+nav ul li:hover ul {
+    display:block;
+    background-color: #603E33;
+    border-radius: 1rem;
+}

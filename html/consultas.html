@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;0,800;1,100;1,500;1,800&display=swap" rel="stylesheet">
+    <link runat="server" rel="icon" href="media/img/icono.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/consultas.css" />
+    <title>Muffcakes • Consultas</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="media/img/logo-marron.png" alt="Logo" width="100"></a>
+            <a href="index.html"><h1>Muffcakes</h1></a>
+
+            <div>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="informacion.html">Informacion</a></li>
+                    <li><a href="recetas.html">Recetas</a>
+                        <ul>
+                            <li><a href="recetas/cupcakes.html">Cupcakes</a></li>
+                            <li><a href="recetas/muffins.html">Muffins</a></li>
+                        </ul>
+                    <li><a href="terminos.html">Terminos</a></li>
+                    <li><a href="consultas.html">Consultas</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <section id="form1">
+        <h2>Formulario</h2>
+        <h3>Datos personales</h3>
+        <form method="POST" enctype="application/x-www-form-urlencoded">
+            <p>Ingrese su nombre</p>
+            <input name="name">
+            <p>Ingrese su Apellido</p>
+            <input name="apellido">
+            <h3>Pais</h3>
+            <p>Argentina</p>
+            <input type="radio" name="pais" value="argentina">
+            <p>Otro</p>
+            <input type="radio" name="pais" value="otro">
+            
+        </form>
+    </section>
+
+    <section id="form2">
+        <form method="POST" enctype="application/x-www-form-urlencoded">
+            <p>¿De que producto se trata?</p>
+            <select name="opcion">
+                <option valie="C">Cupcake</option>
+                <option valie="M">Muffin</option>
+            </select>
+            <p>Ingrese su comentario, duda o consulta</p>
+            <textarea></textarea>
+        <p>Acepta terminos y condiciones</p>
+        <input type="checkbox" name="acepta" value="1">
+        <h3>Finalizar</h3>
+        <input type="submit" value="Envia el formulario">
+        <input type="reset" value="Borrar el formulario">
+    </form>
+    </section>
+
+    <footer>
+        <div>
+            <p>Redes sociales</p>
+            <a href="https://www.facebook.com/"><img src="media/img/fb-logo.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/"><img src="media/img/ig-logo.png" alt="Instagram"></a>
+            <a href="https://www.twitter.com/"><img src="media/img/tw-logo.png" alt="Twitter"></a>
+        </div>
+        <p style="text-align: center;">© 2021 Muffcakes. Reservados todos los derechos.</p>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="informacion.html">Informacion</a></li>
+            <li><a href="recetas.html">Recetas</a>
+            <li><a href="terminos.html">Terminos</a></li>
+            <li><a href="consultas.html">Consultas</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

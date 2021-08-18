@@ -1,0 +1,118 @@
+@media only screen and (min-width: 0) { /*Dispositivos pequeños*/
+    body {
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: 
+        "header"
+        "cuerpo"
+        "texto"
+        "botones"
+        "footer";
+    }
+}
+
+@media only screen and (min-width: 768px) { /*Dispositivos medianos*/
+    body {
+        grid-template-columns: 50% 50%; 
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+        "header header"
+        "cuerpo texto"
+        "botones botones"
+        "footer footer";
+    }
+}
+
+@media only screen and (min-width: 1024px) { /*Dispositivos grandes*/
+    body {
+        grid-template-columns: 50% 50%; 
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+        "header header"
+        "cuerpo texto"
+        "cuerpo botones"
+        "footer footer";
+    }
+}
+
+section img {
+    border-radius: 1rem;
+    border: solid #603E33 0.5rem;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    font-style: italic;
+    text-align: center;
+    color: #603E33;
+}
+
+h2 {
+    font-size: 3rem;
+    text-align: center;
+    text-transform: capitalize;
+    color: #6C4932;
+}
+
+h3 {
+    text-align: center; word-spacing:
+    3rem;
+    letter-spacing: 1rem;
+}
+
+small {
+    color: #6C4932;
+}
+
+section button {
+    font-size: 5rem;
+    -webkit-text-stroke: 0.1rem#C6A37C;
+    color: #603E33;
+    border-radius: 1rem;
+    background-image: url(../media/img/boton.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+section button a {
+    font-size: 5rem;
+    -webkit-text-stroke: 0.1rem#C6A37C;
+    color: #603E33;
+}
+
+a:hover {
+    color: #603E33;
+}
+
+section button:hover {
+    transform: scale(1.1);
+    /*El boton aumentara su tamaño para que sea mas facil de seleccionar*/
+}
+
+.textoCuerpo {
+    font-size: 1.5rem;
+    color: #6C4932;
+    text-align: justify;
+}
+
+
+
+/*Secciones del grid*/
+
+#cuerpo {
+    grid-area: cuerpo;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+#texto {
+    grid-area: texto;
+    align-self: center;
+    padding: 0 10rem 0 10rem ;
+}
+
+#botones {
+    grid-area: botones;
+    text-align: center;
+}
