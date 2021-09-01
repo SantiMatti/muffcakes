@@ -55,6 +55,7 @@ a:hover {
   display: inline-block;
   border: 1px solid $c-oscuro;
   padding: 15px 65px;
+  margin: 0 5px 0 5px;
 }
 .botonFormulario:hover {
   background: $c-mclaro;
@@ -69,7 +70,8 @@ a:hover {
   color: $c-oscuro;
   display: inline-block;
   border: 1px solid $c-oscuro !important;
-  padding: 12px 55px;
+  padding: 15px 55px;
+  margin: 10px 5px 0 5px;
   background: $c-mclaro;
 }
 .botonGeneral:hover {

@@ -54,7 +54,8 @@ a:hover {
   color: #322623;
   display: inline-block;
   border: 1px solid #322623;
-  padding: 15px 65px; }
+  padding: 15px 65px;
+  margin: 0 5px 0 5px; }
 
 .botonFormulario:hover {
   background: #A37555;
@@ -69,7 +70,8 @@ a:hover {
   color: #322623;
   display: inline-block;
   border: 1px solid #322623 !important;
-  padding: 12px 55px;
+  padding: 15px 55px;
+  margin: 10px 5px 0 5px;
   background: #A37555; }
 
 .botonGeneral:hover {
