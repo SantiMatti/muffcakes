@@ -16,9 +16,8 @@ display: inline-block;
 padding: 0 25px;
 }
 .galeria nav a {
-font-size: 12px;
+font-size: 1.5rem;
 font-weight: 700;
-color: $c-medio;
 padding: 5px 0;
 }
 .galeria nav a:hover {
@@ -36,29 +35,29 @@ font-style: oblique;
 .galeria h4 {
 color: $c-medio;
 }
-.galeria h3 {
+.galeria h2 {
 font-weight: 900;
+font-size: 4rem;
 color: $c-oscuro;
-margin: 0 0 25px;
 }
 @media (min-width: 768px) {
-.galeria h3 {
-    font-size: 36px;
+.galeria h2 {
+    font-size: 3.5rem;
 }
 }
 @media (min-width: 992px) {
-.galeria h3 {
-    font-size: 42px;
+.galeria h2 {
+    font-size: 4rem;
 }
 }
 @media (min-width: 1200px) {
-.galeria h3 {
-    font-size: 48px;
+.galeria h2 {
+    font-size: 5rem;
 }
 }
 @media (max-width: 767px) {
-.galeria h3 {
-    font-size: 32px;
+.galeria h2 {
+    font-size: 3rem;
 }
 }
 .galeria .recetas {
@@ -78,41 +77,32 @@ margin: 0 15px 60px;
 }
 @media (max-width: 767px) {
 .galeria .recetas a article {
-    margin: 0 10px 40px;
+margin: 0 10px 40px;
 }
-}
-.galeria .recetas a article .imagen {
--webkit-transition: all 0.4s ease;
--moz-transition: all 0.4s ease;
--o-transition: all 0.4s ease;
-transition: all 0.4s ease;
 }
 .galeria .recetas a article .imagen img {
 width: 100%;
 }
 .galeria .recetas a article .categoria {
 color: $c-medio;
-font-size: 12px;
+font-size: 1.25rem;
 font-weight: 600;
 padding: 26px 0 8px;
 }
 .galeria .recetas a article h3 {
-font-size: 18px;
+font-size: 2rem;
 font-weight: 500;
 color: $c-oscuro;
 line-height: 1em;
 margin-bottom: 10px;
 }
 .galeria .recetas a article p {
-font-size: 14px;
+font-size: 1.5rem;
 font-weight: 400;
 color: $c-medio;
 margin: 0;
 }
 .galeria .recetas a:hover article .imagen {
-opacity: 0.8;
--webkit-transition: all 0.4s ease;
--moz-transition: all 0.4s ease;
--o-transition: all 0.4s ease;
-transition: all 0.4s ease;
+opacity: 0.75;
+transition: all 0.5s ease;
 }

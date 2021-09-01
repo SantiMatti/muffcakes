@@ -11,8 +11,7 @@ left: 0;
 }
 header nav a {
 font-weight: 700;
-font-size: 15px;
-padding: 11px 0;
+font-size: 1.55rem;
 }
 .navbar-light .navbar-nav .nav-link {
 color: $c-medio;
@@ -50,23 +49,31 @@ font-weight: bold;
 /* Inicio Footer*/
 
 footer {
+margin-top: 25px;
 background: $c-oscuro;
 }
 footer h4 {
-font-size: 14px;
+font-size: 1.5rem;
 font-weight: 500;
 color: $c-medio;
 }
 footer p {
 color: $c-mclaro;
 font-weight: 400;
-font-size: 12px;
+font-size: 1.2rem;
 }
 footer .grid {
-    align-items: center;
     justify-content: center;
     padding: 0;
     margin: 0;
+}
+footer .padd {
+    margin-top: 20px;
+}
+
+footer .padd img {
+    padding: 0 2px;
+    width: 3rem;
 }
 
 /* Fin Footer*/

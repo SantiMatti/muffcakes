@@ -2,26 +2,24 @@
 
 /* Inicio Portada Carrousel*/
 
-.carrousel .titulo {
+.titulo {
 position: absolute;
 right: 0;
 left: 0;
 top: 50%;
 transform: translatey(-50%);
 text-align: center;
-display: block;
-margin: 0 auto;
 z-index: 2;
 }
-.carrousel .titulo h3 {
+.titulo h3 {
 font-weight: 500;
-color: white;
 text-shadow: 0px 0px 5px $c-oscuro;
+color: white;
 margin: 0;
 }
-.carrousel .titulo h2 {
+.titulo h2, .titulo h1 {
 font-weight: 900;
-font-size: 66px;
+font-size: 6rem;
 color: white;
 text-shadow: 0px 0px 5px $c-oscuro;
 margin: 0;
@@ -31,10 +29,10 @@ margin: 0;
         top: 30%;
     }
     .carrousel .titulo h3 {
-        font-size: 18px;
+        font-size: 2rem;
     }
     .carrousel .titulo h2 {
-        font-size: 46px;
+        font-size: 4.5rem;
     }
 }
 @media (min-width: 992px) {
@@ -42,15 +40,15 @@ margin: 0;
         top: 50%;
     }
     .carrousel .titulo h3 {
-        font-size: 21px;
+        font-size: 2rem;
     }
     .carrousel .titulo h2 {
-        font-size: 56px;
+        font-size: 5.5rem;
     }
 }
 @media (min-width: 1200px) {
     .carrousel .titulo h2 {
-        font-size: 66px;
+        font-size: 6rem;
     }
     }
 @media (max-width: 767px) {
@@ -58,10 +56,10 @@ margin: 0;
         top: 20%;
     }
     .carrousel .titulo h3 {
-        font-size: 18px;
+        font-size: 1.5rem;
     }
     .carrousel .titulo h2 {
-        font-size: 36px;
+        font-size: 3.5rem;
     }
 }
 
@@ -71,60 +69,35 @@ margin: 0;
 
 .portada {
 position: relative;
-display: block;
 height: 70vh;
 }
-.portada .titulo {
-position: absolute;
-right: 0;
-left: 0;
-top: 50%;
-transform: translatey(-50%);
-text-align: center;
-display: block;
-margin: 0 auto;
-z-index: 2;
-}
+@media (min-width: 767px) {
 .portada .titulo h3 {
-font-weight: 500;
-color: white;
-text-shadow: 0px 0px 5px $c-oscuro;
-margin: 0;
+    font-size: 1.5rem;
 }
 .portada .titulo h1 {
-font-weight: 900;
-font-size: 66px;
-color: white;
-text-shadow: 0px 0px 5px $c-oscuro;
-margin: 0;
-}
-@media (min-width: 768px) {
-.portada .titulo h3 {
-    font-size: 18px;
-}
-.portada .titulo h1 {
-    font-size: 46px;
+    font-size: 4.5rem;
 }
 }
 @media (min-width: 992px) {
 .portada .titulo h3 {
-    font-size: 21px;
+    font-size: 2rem;
 }
 .portada .titulo h1 {
-font-size: 56px;
+font-size: 5.5rem;
 }
 }
 @media (min-width: 1200px) {
 .portada .titulo h1 {
-    font-size: 66px;
+    font-size: 6rem;
 }
 }
 @media (max-width: 767px) {
 .portada .titulo h3 {
-    font-size: 18px;
+    font-size: 1.5rem;
 }
 .portada .titulo h1 {
-font-size: 36px;
+font-size: 3.5rem;
 }
 }
 .portada .imagen {

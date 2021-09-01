@@ -1,17 +1,7 @@
 @import "colores";
-.introduccion {
-background: white;
-position: relative;
-width: 100%;
-}
 .introduccion article {
 text-align: center;
 padding: 20px 0 40px;
-position: relative;
-z-index: 2;
-right: 0;
-left: 0;
-top: -20px;
 }
 @media (min-width: 1200px) {
 .introduccion article {
@@ -26,48 +16,48 @@ top: -20px;
 }
 .introduccion article h4 {
 font-weight: 500;
-font-size: 18px;
-color: $c-medio;
+font-size: 1.5rem;
 margin: 0 0 5px;
 }
 .introduccion article h1 {
 font-weight: 900;
-color: $c-oscuro;
 margin: 0 0 25px;
 }
 @media (min-width: 768px) {
 .introduccion article h1 {
-    font-size: 36px;
+    font-size: 3.5rem;
 }
 }
 @media (min-width: 992px) {
 .introduccion article h1 {
-    font-size: 42px;
+    font-size: 4rem;
 }
 }
 @media (min-width: 1200px) {
 .introduccion article h1 {
-    font-size: 48px;
+    font-size: 4.5rem;
 }
 }
 @media (max-width: 767px) {
 .introduccion article h1 {
-    font-size: 32px;
+    font-size: 3rem;
 }
 }
 .introduccion article p {
 font-weight: 400;
-font-size: 16px;
+font-size: 1.5rem;
 color: $c-moscuro;
-line-height: 1.6em;
+line-height: 1.5em;
 margin-bottom: 40px;
 }
+.introduccion article p strong {
+font-size: 1.75rem;
+}
 .redaccionTextos {
-padding: 56px 0 80px;
+padding: 25px 0 0 0;
 text-align: center;
 }
 .redaccionTextos h4 {
-color: $c-medio;
 margin-top: 100px;
 }
 @media (max-width: 767px) {
@@ -77,58 +67,77 @@ margin-top: 100px;
 }
 .redaccionTextos h1 {
 font-weight: 900;
-color: $c-oscuro;
-margin: 0 0 25px;
 }
 @media (min-width: 768px) {
 .redaccionTextos h1 {
-    font-size: 42px;
+    font-size: 4rem;
 }
 }
 @media (min-width: 992px) {
 .redaccionTextos h1 {
-    font-size: 55px;
+    font-size: 5rem;
 }
 }
 @media (min-width: 1200px) {
 .redaccionTextos h1 {
-    font-size: 66px;
+    font-size: 6rem;
 }
 }
 @media (max-width: 767px) {
 .redaccionTextos h1 {
-    font-size: 32px;
+    font-size: 3rem;
 }
 }
 .redaccionTextos h2 {
-color: $c-oscuro;
 font-weight: 900;
-font-size: 24px;
+font-size: 4rem;
 margin-bottom: 22px;
+padding-top: 30px;
+}
+.redaccionTextos h3 {
+font-weight: 700;
+font-size: 2.5rem;
+margin: 20px;
 }
 .redaccionTextos p {
+text-align: justify;
 font-weight: 400;
-font-size: 16px;
-color: $c-moscuro;
+font-size: 1.6rem;
+line-height: 1.6em;
+}
+.redaccionTextos h5 {
+text-align: center;
+font-weight: 600;
+font-size: 1.6rem;
 line-height: 1.6em;
 }
 .redaccionTextos ul {
 margin: 0;
-padding: 0 0 0 25px;
+padding: 0 0 40px 25px;
 }
 .redaccionTextos li {
+text-align: left;
 font-weight: 400;
-font-size: 16px;
+font-size: 1.6rem;
 color: $c-moscuro;
 line-height: 1.6em;
+}
+.redaccionTextos img, .redaccionRecetas img {
+    width: 75%;
 }
 .redaccionRecetas {
 padding: 56px 0 80px;
 }
+.redaccionRecetas h3 {
+text-align: justify;
+font-weight: 700;
+font-size: 5rem;
+padding-top: 40px;
+}
 .redaccionRecetas p {
+text-align: justify;
 font-weight: 400;
-font-size: 16px;
-color: $c-moscuro;
+font-size: 1.6rem;
 line-height: 1.6em;
 }
 .redaccionRecetas ul {
@@ -145,12 +154,20 @@ line-height: 1.6em;
 margin: 50px 0;
 }
 .formulario h2 {
-color: $c-oscuro;
 font-weight: 900;
-font-size: 24px;
+font-size: 3rem;
 }
 .formulario p {
-font-size: 16px;
+font-size: 1.75rem;
+font-weight: 400;
+line-height: 1.6em;
+}
+.formulario p strong {
+font-size: 1.75rem;
+color: $c-oscuro;
+}
+.formulario a {
+font-size: 1.75rem;
 color: $c-moscuro;
 font-weight: 400;
 line-height: 1.6em;
@@ -158,13 +175,13 @@ line-height: 1.6em;
 .formulario .form label {
 font-weight: 500;
 color: $c-oscuro;
-font-size: 16px;
+font-size: 1.5rem;
 display: block;
 margin-bottom: 7px;
 }
 .formulario .form input {
 width: 100%;
-font-size: 16px;
+font-size: 1.5rem;
 padding: 10px;
 color: $c-mclaro;
 border: 1px solid $c-oscuro;
@@ -172,7 +189,7 @@ margin-bottom: 30px;
 }
 .formulario .form textarea {
 width: 100%;
-font-size: 16px;
+font-size: 1.5rem;
 padding: 10px;
 color: $c-mclaro;
 border: 1px solid $c-oscuro;
@@ -180,12 +197,17 @@ margin-bottom: 30px;
 }
 .formulario .form select {
 width: 100%;
-font-size: 16px;
+font-size: 1.5rem;
 padding: 10px;
 color: $c-mclaro;
 border: 1px solid $c-oscuro;
 margin-bottom: 30px;
 }
+.formulario .form select option {
+font-size: 1.5rem;
+color: $c-mclaro;
+}
 .formulario .form button {
 margin-top: 30px;
+margin-bottom: 20px;
 }

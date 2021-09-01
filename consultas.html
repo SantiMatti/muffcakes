@@ -76,29 +76,27 @@
     <div class="formulario">
         <div class="container">
             <div class="row">
-                <div class="col-sm-5">
+                <div class="col-md-6 col-sm-12">
                     <h2>Formulario para consultas</h2>
                     <p>Completá el formulario con tus consultas para que podamos ayudarte en lo que necesites! Muchas gracias.</p>
                     <br>
-                    <form method="POST" enctype="multipart/form-data" action="#">
-                        <input type="hidden" id="frmSubmitHidden" name="frmSubmitHidden" value="1">
+                    <form method="POST" enctype="application/x-www-form-urlencoded">
                         <div class="form">
-                            
-                            <label for="frmName">Nombre*  y Apellido</label>
-                                <input type="text" id="frmName" name="frmName" value="" required>
-                            <label for="frmEmail">Email*</label>
-                                <input type="email" id="frmEmail" name="frmEmail" value="" required>
-                            <label for="frmPhone">Teléfono</label>
-                                <input type="number" id="frmPhone" name="frmPhone" value="">
-                            <label for="frmName">Asunto*</label>
-                                <input type="text" id="frmLocalidad" name="frmLocalidad" value="" required>
-                            <label for="frmName">Producto*</label>
-                                <select id="frmArea" name="frmArea" onchange="cambioArea(this.value)" required="">
+                            <label for="name">Nombre*  y Apellido</label>
+                                <input type="text" id="name" name="name" value="" required>
+                            <label for="email">Email*</label>
+                                <input type="email" id="email" name="email" value="" required>
+                            <label for="tel">Teléfono</label>
+                                <input type="tel" id="tel" name="tel" value="">
+                            <label for="asunto">Asunto*</label>
+                                <input type="text" id="text" name="text" value="" required>
+                            <label for="producto">Producto*</label>
+                                <select id="producto" name="producto" required="">
                                     <option value="consumidor">Muffins</option>
                                     <option value="ventas">Cupcakes</option>
                                 </select>
-                            <label for="frmComentarios">Mensaje*</label>
-                                <textarea rows="5" id="frmComentarios" name="frmComentarios" required></textarea>
+                            <label for="text">Mensaje*</label>
+                                <textarea rows="5" id="text" name="text" required></textarea>
                             <div class="text-center">
                                 <button type="submit" class="botonFormulario">Enviar</button>
                             <button type="reset" class="botonFormulario">Borrar</button>
@@ -106,7 +104,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="col-md-5 col-sm-offset-1 text-center">
+                <div class="col-md-6 col-sm-12 text-center">
                     <h2>Contacto por fuera</h2>
                     <p><strong>Tel.</strong><a href="tel:+5491112345678"> +54 9 11 1234-5678</a></p>
                     <p><strong>Email</strong><a href="mailto:info@muffcakes.com"> info@muffcakes.com</a></p>
@@ -123,18 +121,18 @@
 
     <footer>
         <div class="container-fluid row grid text-center">
-            <div class="col-md-3 col-sm-3">
+            <div class="col-md-3 col-sm-3 padd">
                 <h4>Consultas</h4>
                 <a href="mailto:info@muffcakes.com"><p>info@muffcakes.com</p></a>
             </div>
             <div class="col-md-3 col-sm-2">
                 <a href="#"><img src="media/logo-footer.png" alt="Boton para subir" width="100px"></a>
             </div>
-            <div class="col-md-3 col-sm-3">
+            <div class="col-md-3 col-sm-3 padd">
                 <div>
-                    <a href="https://www.facebook.com" target="_blank"><img src="media/fb-logo.png" alt="Boton página de Facebook" width="25px"></a>
-                    <a href="https://www.instagram.com" target="_blank"><img src="media/ig-logo.png" alt="Boton página de Instagram" width="25px"></a>
-                    <a href="https://www.twitter.com" target="_blank"><img src="media/tw-logo.png" alt="Boton página de Twitter" width="25px"></a>                        
+                    <a href="https://www.facebook.com" target="_blank"><img src="media/fb-logo.png" alt="Boton página de Facebook"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="media/ig-logo.png" alt="Boton página de Instagram"></a>
+                    <a href="https://www.twitter.com" target="_blank"><img src="media/tw-logo.png" alt="Boton página de Twitter"></a>                        
                     <div class="text-center">
                         <p>©2021 Muffcakes</p>
                     </div>

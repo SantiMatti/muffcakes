@@ -1,4 +1,7 @@
 @import "colores";
+* {
+  font-size:62.5%; 
+}
 a{
   text-decoration: none;
   color: $c-medio;
@@ -6,6 +9,14 @@ a{
 }
 a:hover{
   color: $c-oscuro;
+}
+h1, h2 {
+font-family: 'Arima Madurai', cursive;;
+color: $c-oscuro;
+}
+h3, h4, h5, h6, p, body, html {
+font-family: 'Lexend Deca', sans-serif;
+color: $c-moscuro;
 }
 h4 {
   font-weight: 500;
@@ -25,17 +36,8 @@ p {
   color: $c-moscuro;
   line-height: 1.6em;
 }
-h1, h2 {
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-text-rendering: optimizeLegibility;
-font-family: 'Arima Madurai', cursive;;
-}
-h3, h4, h5, h6, p, body, html {
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-text-rendering: optimizeLegibility;
-font-family: 'Lexend Deca', sans-serif;
+p strong {
+  font-size: 1.5rem;
 }
 a, a:hover {
   -webkit-transition: all 0.4s ease;
