@@ -1,131 +1,272 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;0,800;1,100;1,500;1,800&display=swap" rel="stylesheet">
-    <link runat="server" rel="icon" href="media/img/icono.png" type="image/x-icon" />
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/recetas.css" />
-    <title>Muffcakes • Recetas</title>
+    <title>Muffcakes • Recetas • Ver todas</title>
+    <link rel="shortcut icon" type="image/jpg" href="media/icono.png"/>
+    <meta name="description" content="Muffcakes es una pagina donde encontraras recetas de Muffins y Cupcakes por igual de la mejor calidad y gustos posibles.">
+    <meta name="keywords" content="Muffins, Cupcakes, Muffcakes, Recetas, Dulce, Salado">
+    <link rel="stylesheet" href="styles/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html"><img src="media/img/logo-marron.png" alt="Logo" width="100"></a>
-            <a href="index.html"><h1>Muffcakes</h1></a>
 
-            <div>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="informacion.html">Informacion</a></li>
-                    <li><a href="recetas.html">Recetas</a>
-                        <ul>
-                            <li><a href="recetas/cupcakes.html">Cupcakes</a></li>
-                            <li><a href="recetas/muffins.html">Muffins</a></li>
-                        </ul>
-                    <li><a href="terminos.html">Terminos</a></li>
-                    <li><a href="consultas.html">Consultas</a></li>
-                </ul>
+    <!--Inicio Header - Incio General-->
+
+    <header>
+
+        <!--NavBar de Bootstrap-->
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="media/logo-muffcakes.png" alt="" height="50px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="informacion.html">Información</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Recetas</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item active" href="recetas.html">Ver todas</a></li>
+                                <li><a class="dropdown-item" href="recetas/muffins.html">Muffins</a></li>
+                                <li><a class="dropdown-item" href="recetas/cupcakes.html">Cupcakes</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="terminos.html">Términos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="consultas.html">Consultas</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
-    
-    <section id="texto">
-        <h2>Masas Básicas</h2>
-        <p class="textoImportante">Aunque cada Muffin o cada Cupcake puede estar compuesto por distintos ingredientes, si se puede hablar de masas básicas que, una vez aprendidas, se pueden variar o perfeccionar.</p>
-        <h2>Masa para Muffins</h2>
-    </section>
 
-    <section id="texto1">
-        <h3>Ingredientes</h3>
-        <ul>
-            <li>Un huevo</li>
-            <li>235ml de leche</li>
-            <li>80ml de aceite de girasol</li>
-            <li>150g de azúcar</li>
-            <li>140g de harina</li>
-            <li>2 cucharaditas de levadura</li>
-            <li>Media cucharadita de bicarbonato</li>
-            <li>Una pizca de sal</li>
-        </ul>
-    </section>
+    <!--Fin Header - Inicio Portada-->
 
-    <section id="texto2">
-        <h3>Elaboracion</h3>
-        <p class="textoCuerpo">Mezclamos ligeramente con las varillas el huevo, la leche y el aceite. Le añadimos el azúcar (si es que queremos muffins dulces) y luego la harina tamizada con la levadura, el bicarbonato y la sal, integrándola con una espátula y con pocos movimientos envolventes. Debe recordarse que no es necesario batir la mezcla. A esta preparación s ele añaden diferentes ingredientes; luego se distribuyen en moldes y se cuecen en el horno.</p>
-    </section>
+    <div class="portada">
+        <div class="titulo">
+            <h3>Los mejores Muffins y Cupcakes</h3>
+            <h1>Recetas</h1>
+        </div>
+        <div class="imagen">
+            <img src="media/recetas.jpg" alt="">
+        </div>
+    </div>
+  
+    <div class="trianguloPortada">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <polygon fill="#FFFFFF" points="0,100 100,0 100,100"></polygon>
+        </svg>
+    </div>
 
-    <section id="texto3">
-        <h2>Masa para Cupcakes</h2>
-        <p class="textoImportante">No hay una masa especifica para los Cupcakes, ya que se pueden confeccionar con la receta de cualquier tarta. Sin embargo, hay cuatro ingredientes básicos que están presentes en todos ellos: harina, huevos, mantequilla (o aceite) y azúcar.</p>
-        <p class="textoImportante">A lo largo de este libro se ofrecen recetas con una amplia variedad de ingredientes y sabores, Pero lo que distingue fácilmente a los Cupcakes de otras presentaciones con forma similar, como son las magdalenas y los Muffins, es su extraordinaria decoración.</p>
-        <p class="textoImportante">En la decoración de los Cupcakes intervienen no solo frostings o cremas sino, también, figuras solidas confeccionadas con tres sustancias básicas: el <a href="#chocolate">chocolate</a>, el <a href="#fondant1">fondant</a> y la <a href="#azucar1">masa de azúcar</a> para hacer flores. Cada uno de ellos debe trabajarse adecuadamente para obtener el resultado deseado.</p>
-    </section>
+    <!--Fin Portada - Inicio Recetas-->
+  
+        <div class="galeria">
+            <div class="container">
+                <h4>Cociná rico y sano</h4>
+                <h2>Recetas Muffcakes</h2>
 
-    <section id="chocolate">
-        <h3>Chocolate</h3>
-        <p class="textoCuerpo">Para hacer figuras con este ingrediente es recomendable fundir el chocolate al baño María, ya que se quema fácilmente y pierde muchas de sus propiedades. Una vez que se ha fundido y presenta una textura fácil de manejar y recomer, debe ser templado; es decir, enfriado en un baño María inverso, poniendo el recipiente dentro de otro lleno de hielo. De este modo se evita la formación de cristales de azúcar y se consigue que el chocolate este cremoso y brillante. A continuación, se vuelca en el molde y se deja secar hasta que este sólido. Conviene utilizar moldes de silicona ya que, por su flexibilidad, permiten el desmoldado sin que se rompa en caso de que el templado no sea perfecto.</p>
-    </section>
+            <nav>
+                <li><a href="recetas.html" class="active">Ver todas</a></li>
+                <li><a href="recetas/muffins.html">Muffins</a></li>
+                <li><a href="recetas/cupcakes.html">Cupcakes</a></li>
+            </nav>
 
-    <section id="fondant1">
-        <h3>Fondant</h3>
-        <h4>Ingredientes</h4>
-        <p class="textoCuerpo">El fondant es una masa que se emplea para decorar tartas y pasteles.</p>
-        <ul>
-            <li>1/2 kg de azúcar</li>
-            <li>Una cucharada de glucosa</li>
-            <li>Una cucharada de zumo de limón</li>
-            <li>Agua</li>
-        </ul>
-    </section>
+            <div class="recetas">
+                <div class="row"> <!--Inicio de Fila-->
+                    <div class="col-sm-4">
+                        <a href="recetas/muffins/besos-de-miel.html">
+                            <article>
+                                <div class="imagen">
+                                    <img src="media/recetas/besos-de-miel-portada.jpg" alt="Besos de Miel">
+                                </div>
+                                <div class="categoria">Muffin • Dulce</div>
+                                <h3>Besos de Miel</h3>
+                                <p>Unidades: 12 • Tiempo de Elaboración: 30 minutos • Dificultad: Baja</p>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="recetas/muffins/capuchino.html">
+                            <article>
+                                <div class="imagen">
+                                    <img src="media/recetas/capuchino-portada.jpg" alt="Capuchino">
+                                </div>
+                                <div class="categoria">Muffin • Dulce</div>
+                                <h3>Capuchino</h3>
+                                <p>Unidades: 12 • Tiempo de Elaboración: 50 minutos • Dificultad: Baja</p>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="recetas/muffins/feliz-halloween.html">
+                            <article>
+                                <div class="imagen">
+                                    <img src="media/recetas/feliz-halloween-portada.jpg" alt="Feliz Halloween">
+                                </div>
+                                <div class="categoria">Muffin • Dulce</div>
+                                <h3>Feliz Halloween</h3>
+                                <p>Unidades: 24 • Tiempo de Elaboración: 40 minutos • Dificultad: Baja</p>
+                            </article>
+                        </a>
+                    </div>
+                </div> <!--Fin de Fila-->
+                <div class="row"> <!--Inicio de Fila-->
+                    <div class="col-sm-4">
+                        <a href="recetas/muffins/navidad.html">
+                            <article>
+                                <div class="imagen">
+                                    <img src="media/recetas/navidad-portada.jpg" alt="Navidad">
+                                </div>
+                                <div class="categoria">Muffin • Dulce</div>
+                                <h3>Navidad</h3>
+                                <p>Unidades: 12 • Tiempo de Elaboración: 1 hora • Dificultad: Baja</p>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="recetas/muffins/aperitivos-de-gambas.html">
+                            <article>
+                                <div class="imagen">
+                                    <img src="media/recetas/aperitivo-de-gambas-portada.jpg" alt="Aperitivos de Gambas">
+                                </div>
+                                <div class="categoria">Muffin • Salado</div>
+                                <h3>Aperitivos de Gambas</h3>
+                                <p>Unidades: 6 • Tiempo de Elaboración: 50 minutos • Dificultad: Baja</p>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="recetas/muffins/bacon-y-queso.html">
+                            <article>
+                                <div class="imagen">
+                                    <img src="media/recetas/bacon-y-queso-portada.jpg" alt="Bacón y Queso">
+                                </div>
+                                <div class="categoria">Muffin • Salado</div>
+                                <h3>Bacón y Queso</h3>
+                                <p>Unidades: 12 • Tiempo de Elaboración: 50 minutos • Dificultad: Baja</p>
+                            </article>
+                        </a>
+                    </div>
+                </div> <!--Fin de Fila-->
+                <div class="row"> <!--Inicio de Fila-->
+                    <div class="col-sm-4">
+                        <a href="recetas/cupcakes/bombon-del-amor.html">
+                            <article>
+                                <div class="imagen">
+                                    <img src="media/recetas/bombon-del-amor-portada.jpg" alt="Bombón del Amor">
+                                </div>
+                                <div class="categoria">Cupcake</div>
+                                <h3>Bombón del Amor</h3>
+                                <p>Unidades: 12 • Tiempo de Elaboración: 1 hora • Dificultad: Media</p>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="recetas/cupcakes/huevos-de-pascua.html">
+                            <article>
+                                <div class="imagen">
+                                    <img src="media/recetas/huevos-de-pascua-portada.jpg" alt="Huevos de Pascua">
+                                </div>
+                                <div class="categoria">Cupcake</div>
+                                <h3>Huevos de Pascua</h3>
+                                <p>Unidades: 12 • Tiempo de Elaboración: 1 hora • Dificultad: Media</p>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="recetas/cupcakes/calabaza.html">
+                            <article>
+                                <div class="imagen">
+                                    <img src="media/recetas/calabaza-portada.jpg" alt="Calabaza">
+                                </div>
+                                <div class="categoria">Cupcake</div>
+                                <h3>Calabaza</h3>
+                                <p>Unidades: 15 • Tiempo de Elaboración: 50 minutos • Dificultad: Baja</p>
+                            </article>
+                        </a>
+                    </div>
+                </div> <!--Fin de Fila-->
+                <div class="row"> <!--Inicio de Fila-->
+                    <div class="col-sm-4">
+                        <a href="recetas/cupcakes/noche-de-brujas.html">
+                            <article>
+                                <div class="imagen">
+                                    <img src="media/recetas/noche-de-brujas-portada.jpg" alt="Noche de Brujas">
+                                </div>
+                                <div class="categoria">Cupcake</div>
+                                <h3>Noche de Brujas</h3>
+                                <p>Unidades: 12 • Tiempo de Elaboración: 50 minutos • Dificultad: Media</p>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="recetas/cupcakes/papa-noel.html">
+                            <article>
+                                <div class="imagen">
+                                    <img src="media/recetas/papa-noel-portada.jpg" alt="Papá Noel">
+                                </div>
+                                <div class="categoria">Cupcake</div>
+                                <h3>Papá Noel</h3>
+                                <p>Unidades: 12 • Tiempo de Elaboración: 50 minutos • Dificultad: Baja</p>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="recetas/cupcakes/nochebuena.html">
+                            <article>
+                                <div class="imagen">
+                                    <img src="media/recetas/nochebuena-portada.jpg" alt="Nochebuena">
+                                </div>
+                                <div class="categoria">Cupcake</div>
+                                <h3>Nochebuena</h3>
+                                <p>Unidades: 12 • Tiempo de Elaboración: 1 hora 20 minutos • Dificultad: Baja</p>
+                            </article>
+                        </a>
+                    </div>
+                </div> <!--Fin de Fila-->
+            </div>
+        </div>
 
-    <section id="fondant2">
-        <br>
-        <h4>Elaboracion</h4>
-        <p class="textoCuerpo">Ponemos el azúcar y la glucosa en un cazo y le echamos agua hasta que queden apenas cubiertas. Llevamos el cazo al fuego y preparamos un almíbar al punto de bola blanda. Este punto se reconoce cuando, al echar una gota en un vaso de agua fría, tomamos la bolita que se ha formado entre los dedos y vemos que es elástica y moldeable.</p>
-        <p class="textoCuerpo">Una vez que el almíbar presenta esta textura, lo volcamos sobre una superficie (preferiblemente de mármol) mojada y le añadimos el zumo de limón. Como esta muy caliente, es necesario trabajarlo con una espátula de madera, llevándolo desde los bordes hacia el centro. Veremos que, a medida que se mezcla, la masa cobra firmeza y va tomando un color cada vez mas blanco. Finalmente, esta masa se estira y se emplea para decorar los Cupcakes.</p>
-    </section>
-    
-    <section id="azucar1">
-        <h3>Masa de Azúcar</h3>
-        <h4>Ingredientes</h4>
-        <p class="textoCuerpo">Para hacer flores y otros objetos decorativos se emplea una masa elástica que, al secarse, se endurece.</p>
-        <ul>
-            <li>125g de azúcar glas</li>
-            <li>2 cucharaditas de cola de pescado en polvo</li>
-            <li>6 cucharaditas de agua fría</li>
-            <li>Una cucharadita y cuarto de glucosa</li>
-            <li>2 cucharadas de fécula de maíz (maicena)</li>
-            <li>Colorantes alimentarios</li>
-        </ul>
-    </section>
-
-    <section id="azucar2">
-        <br>
-        <h4>Elaboracion</h4>
-        <p class="textoCuerpo">En la superficie de trabajo espolvoreamos el azúcar glas y colocamos en un cazo la cola de pescado (gelatina neutra) con agua fría. Removemos esta mezcla, le añadimos la glucosa y la ponemos al fuego muy bajo, batiéndola hasta que todos los elementos se hayan integrado. Antes de que hierva (es muy importante) la sacamos del fuego y la colocamos sobre el azúcar. Con una cuchara de madera, vamos integrando rápidamente el azúcar. Cuando su temperatura lo permita, empezamos a amasarla con las manos hasta obtener una textura suave, añadiéndole maicena, poco a poco, hasta que se despegue de las manos. Es muy importante no añadir demasiada maicena para que no pierda elasticidad.</p>
-        <p class="textoCuerpo">Con un rodillo acrílico estiramos la masa y, tomamos pequeñas porciones, confeccionamos las flores o las figuras. Es importante tener en cuenta que si queremos que sean de colores, debemos echar unas gotas de colorante a la mezcla de agua, cola de pescado y glucosa. La masa se puede guardar en la nevera envuelta en film y en un recipiente hermético.</p>
-    </section>
+    <!--Fin Recetas - Inicio Footer-->
 
     <footer>
-        <div>
-            <p>Redes sociales</p>
-            <a href="https://www.facebook.com/"><img src="media/img/fb-logo.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com/"><img src="media/img/ig-logo.png" alt="Instagram"></a>
-            <a href="https://www.twitter.com/"><img src="media/img/tw-logo.png" alt="Twitter"></a>
+        <div class="container-fluid row grid text-center">
+            <div class="col-md-3 col-sm-3">
+                <h4>Consultas</h4>
+                <a href="mailto:info@muffcakes.com"><p>info@muffcakes.com</p></a>
+            </div>
+            <div class="col-md-3 col-sm-2">
+                <a href="#"><img src="media/logo-footer.png" alt="Boton para subir" width="100px"></a>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <div>
+                    <a href="https://www.facebook.com" target="_blank"><img src="media/fb-logo.png" alt="Boton página de Facebook" width="25px"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="media/ig-logo.png" alt="Boton página de Instagram" width="25px"></a>
+                    <a href="https://www.twitter.com" target="_blank"><img src="media/tw-logo.png" alt="Boton página de Twitter" width="25px"></a>                        
+                    <div class="text-center">
+                        <p>©2021 Muffcakes</p>
+                    </div>
+                </div>
+            </div>           
         </div>
-        <p style="text-align: center;">© 2021 Muffcakes. Reservados todos los derechos.</p>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="informacion.html">Informacion</a></li>
-            <li><a href="recetas.html">Recetas</a>
-            <li><a href="terminos.html">Terminos</a></li>
-            <li><a href="consultas.html">Consultas</a></li>
-        </ul>
     </footer>
+
+    <!--Fin Footer - Fin General-->
+
+    <script src="styles/bootstrap/bootstrap.bundle.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,157 @@
+@import "colores";
+
+/* Inicio Portada Carrousel*/
+
+.carrousel .titulo {
+position: absolute;
+right: 0;
+left: 0;
+top: 50%;
+transform: translatey(-50%);
+text-align: center;
+display: block;
+margin: 0 auto;
+z-index: 2;
+}
+.carrousel .titulo h3 {
+font-weight: 500;
+color: white;
+text-shadow: 0px 0px 5px $c-oscuro;
+margin: 0;
+}
+.carrousel .titulo h2 {
+font-weight: 900;
+font-size: 66px;
+color: white;
+text-shadow: 0px 0px 5px $c-oscuro;
+margin: 0;
+}
+@media (min-width: 767px) {
+    .carrousel .titulo {
+        top: 30%;
+    }
+    .carrousel .titulo h3 {
+        font-size: 18px;
+    }
+    .carrousel .titulo h2 {
+        font-size: 46px;
+    }
+}
+@media (min-width: 992px) {
+    .carrousel .titulo {
+        top: 50%;
+    }
+    .carrousel .titulo h3 {
+        font-size: 21px;
+    }
+    .carrousel .titulo h2 {
+        font-size: 56px;
+    }
+}
+@media (min-width: 1200px) {
+    .carrousel .titulo h2 {
+        font-size: 66px;
+    }
+    }
+@media (max-width: 767px) {
+    .carrousel .titulo {
+        top: 20%;
+    }
+    .carrousel .titulo h3 {
+        font-size: 18px;
+    }
+    .carrousel .titulo h2 {
+        font-size: 36px;
+    }
+}
+
+/* Fin Portada Carrousel*/
+
+/* Inicio Portada General*/
+
+.portada {
+position: relative;
+display: block;
+height: 70vh;
+}
+.portada .titulo {
+position: absolute;
+right: 0;
+left: 0;
+top: 50%;
+transform: translatey(-50%);
+text-align: center;
+display: block;
+margin: 0 auto;
+z-index: 2;
+}
+.portada .titulo h3 {
+font-weight: 500;
+color: white;
+text-shadow: 0px 0px 5px $c-oscuro;
+margin: 0;
+}
+.portada .titulo h1 {
+font-weight: 900;
+font-size: 66px;
+color: white;
+text-shadow: 0px 0px 5px $c-oscuro;
+margin: 0;
+}
+@media (min-width: 768px) {
+.portada .titulo h3 {
+    font-size: 18px;
+}
+.portada .titulo h1 {
+    font-size: 46px;
+}
+}
+@media (min-width: 992px) {
+.portada .titulo h3 {
+    font-size: 21px;
+}
+.portada .titulo h1 {
+font-size: 56px;
+}
+}
+@media (min-width: 1200px) {
+.portada .titulo h1 {
+    font-size: 66px;
+}
+}
+@media (max-width: 767px) {
+.portada .titulo h3 {
+    font-size: 18px;
+}
+.portada .titulo h1 {
+font-size: 36px;
+}
+}
+.portada .imagen {
+width: 100%;
+height: 100%;
+overflow: hidden;
+background: $c-oscuro;
+}
+.portada .imagen img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: middle center;
+opacity: 0.85;
+}
+.trianguloPortada {
+position: absolute;
+z-index: 2;
+right: 0;
+left: 0;
+display: block;
+}
+.trianguloPortada svg {
+position: absolute;
+bottom: 0;
+width: 100%;
+height: 15vw;
+}
+
+/* Fin Portada General*/

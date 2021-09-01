@@ -1,0 +1,191 @@
+@import "colores";
+.introduccion {
+background: white;
+position: relative;
+width: 100%;
+}
+.introduccion article {
+text-align: center;
+padding: 20px 0 40px;
+position: relative;
+z-index: 2;
+right: 0;
+left: 0;
+top: -20px;
+}
+@media (min-width: 1200px) {
+.introduccion article {
+    max-width: 800px;
+    margin: 0 auto;
+}
+}
+@media (max-width: 767px) {
+.introduccion article {
+    padding: 40px 0 30px;
+}
+}
+.introduccion article h4 {
+font-weight: 500;
+font-size: 18px;
+color: $c-medio;
+margin: 0 0 5px;
+}
+.introduccion article h1 {
+font-weight: 900;
+color: $c-oscuro;
+margin: 0 0 25px;
+}
+@media (min-width: 768px) {
+.introduccion article h1 {
+    font-size: 36px;
+}
+}
+@media (min-width: 992px) {
+.introduccion article h1 {
+    font-size: 42px;
+}
+}
+@media (min-width: 1200px) {
+.introduccion article h1 {
+    font-size: 48px;
+}
+}
+@media (max-width: 767px) {
+.introduccion article h1 {
+    font-size: 32px;
+}
+}
+.introduccion article p {
+font-weight: 400;
+font-size: 16px;
+color: $c-moscuro;
+line-height: 1.6em;
+margin-bottom: 40px;
+}
+.redaccionTextos {
+padding: 56px 0 80px;
+text-align: center;
+}
+.redaccionTextos h4 {
+color: $c-medio;
+margin-top: 100px;
+}
+@media (max-width: 767px) {
+.redaccionTextos h4 {
+    margin-top: 40px;
+}
+}
+.redaccionTextos h1 {
+font-weight: 900;
+color: $c-oscuro;
+margin: 0 0 25px;
+}
+@media (min-width: 768px) {
+.redaccionTextos h1 {
+    font-size: 42px;
+}
+}
+@media (min-width: 992px) {
+.redaccionTextos h1 {
+    font-size: 55px;
+}
+}
+@media (min-width: 1200px) {
+.redaccionTextos h1 {
+    font-size: 66px;
+}
+}
+@media (max-width: 767px) {
+.redaccionTextos h1 {
+    font-size: 32px;
+}
+}
+.redaccionTextos h2 {
+color: $c-oscuro;
+font-weight: 900;
+font-size: 24px;
+margin-bottom: 22px;
+}
+.redaccionTextos p {
+font-weight: 400;
+font-size: 16px;
+color: $c-moscuro;
+line-height: 1.6em;
+}
+.redaccionTextos ul {
+margin: 0;
+padding: 0 0 0 25px;
+}
+.redaccionTextos li {
+font-weight: 400;
+font-size: 16px;
+color: $c-moscuro;
+line-height: 1.6em;
+}
+.redaccionRecetas {
+padding: 56px 0 80px;
+}
+.redaccionRecetas p {
+font-weight: 400;
+font-size: 16px;
+color: $c-moscuro;
+line-height: 1.6em;
+}
+.redaccionRecetas ul {
+margin: 0;
+padding: 0 0 0 25px;
+}
+.redaccionRecetas li {
+font-weight: 400;
+font-size: 16px;
+color: $c-moscuro;
+line-height: 1.6em;
+}
+.formulario {
+margin: 50px 0;
+}
+.formulario h2 {
+color: $c-oscuro;
+font-weight: 900;
+font-size: 24px;
+}
+.formulario p {
+font-size: 16px;
+color: $c-moscuro;
+font-weight: 400;
+line-height: 1.6em;
+}
+.formulario .form label {
+font-weight: 500;
+color: $c-oscuro;
+font-size: 16px;
+display: block;
+margin-bottom: 7px;
+}
+.formulario .form input {
+width: 100%;
+font-size: 16px;
+padding: 10px;
+color: $c-mclaro;
+border: 1px solid $c-oscuro;
+margin-bottom: 30px;
+}
+.formulario .form textarea {
+width: 100%;
+font-size: 16px;
+padding: 10px;
+color: $c-mclaro;
+border: 1px solid $c-oscuro;
+margin-bottom: 30px;
+}
+.formulario .form select {
+width: 100%;
+font-size: 16px;
+padding: 10px;
+color: $c-mclaro;
+border: 1px solid $c-oscuro;
+margin-bottom: 30px;
+}
+.formulario .form button {
+margin-top: 30px;
+}

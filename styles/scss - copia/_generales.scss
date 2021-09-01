@@ -1,0 +1,78 @@
+@import "colores";
+a{
+  text-decoration: none;
+  color: $c-medio;
+  border: none !important;
+}
+a:hover{
+  color: $c-oscuro;
+}
+h4 {
+  font-weight: 500;
+  font-size: 18px;
+  color: $c-medio;
+  margin: 0 0 5px;
+}
+h3 {
+  font-size: 48px;
+  font-weight: 900;
+  color: $c-medio;
+  margin: 0 0 25px;
+}
+p {
+  font-weight: 400;
+  font-size: 16px;
+  color: $c-moscuro;
+  line-height: 1.6em;
+}
+h1, h2 {
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+text-rendering: optimizeLegibility;
+font-family: 'Arima Madurai', cursive;;
+}
+h3, h4, h5, h6, p, body, html {
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+text-rendering: optimizeLegibility;
+font-family: 'Lexend Deca', sans-serif;
+}
+a, a:hover {
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+a:hover {
+  text-decoration: none;
+}
+.botonFormulario {
+  font-size: 14px;
+  font-weight: 500;
+  color: $c-oscuro;
+  display: inline-block;
+  border: 1px solid $c-oscuro;
+  padding: 15px 65px;
+}
+.botonFormulario:hover {
+  background: $c-mclaro;
+  color: $c-oscuro;
+}
+.botonFormulario:focus {
+  text-decoration: none;
+}
+.botonGeneral {
+  font-size: 12px;
+  font-weight: 700;
+  color: $c-oscuro;
+  display: inline-block;
+  border: 1px solid $c-oscuro !important;
+  padding: 12px 55px;
+  background: $c-mclaro;
+}
+.botonGeneral:hover {
+  background: transparent;
+}
+.botonGeneral:focus {
+  text-decoration: none;
+}

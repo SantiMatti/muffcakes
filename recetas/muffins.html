@@ -1,64 +1,196 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;0,800;1,100;1,500;1,800&display=swap" rel="stylesheet">
-    <link runat="server" rel="icon" href="media/img/icono.png" type="image/x-icon" />
-    <link rel="stylesheet" href="../css/base.css" />
-    <link rel="stylesheet" href="../css/recetas/muffins.css" />
-    <title>Muffcakes • Muffins</title>
+    <title>Muffcakes • Recetas • Muffins</title>
+    <link rel="shortcut icon" type="image/jpg" href="../media/icono.png"/>
+    <meta name="description" content="Muffcakes es una pagina donde encontraras recetas de Muffins y Cupcakes por igual de la mejor calidad y gustos posibles.">
+    <meta name="keywords" content="Muffins, Cupcakes, Muffcakes, Recetas, Dulce, Salado">
+    <link rel="stylesheet" href="../styles/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="../index.html"><img src="../media/img/logo-marron.png" alt="Logo" width="100"></a>
-            <a href="../index.html"><h1>Muffcakes</h1></a>
 
-            <div>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../informacion.html">Informacion</a></li>
-                    <li><a href="../recetas.html">Recetas</a>
-                        <ul>
-                            <li><a href="cupcakes.html">Cupcakes</a></li>
-                            <li><a href="muffins.html">Muffins</a></li>
-                        </ul>
-                    <li><a href="../terminos.html">Terminos</a></li>
-                    <li><a href="../consultas.html">Consultas</a></li>
-                </ul>
+    <!--Inicio Header - Incio General-->
+
+    <header>
+
+        <!--NavBar de Bootstrap-->
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html"><img src="../media/logo-muffcakes.png" alt="" height="50px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../informacion.html">Información</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Recetas</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="../recetas.html">Ver todas</a></li>
+                                <li><a class="dropdown-item active" href="../recetas/muffins.html">Muffins</a></li>
+                                <li><a class="dropdown-item" href="../recetas/cupcakes.html">Cupcakes</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../terminos.html">Términos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../consultas.html">Consultas</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
-    
-    <section id="cuerpo">
-        <h2>Oops! Sitio en construccion</h2>
-    </section>
 
-    <section id="texto">
-    </section>
+    <!--Fin Header - Inicio Portada-->
 
-    <section id="botones">
-    </section>
+    <div class="portada">
+        <div class="titulo">
+            <h3>Las mejores recetas</h3>
+            <h1>Muffins</h1>
+        </div>
+        <div class="imagen">
+            <img src="../media/muffins.jpg" alt="">
+        </div>
+    </div>
+  
+    <div class="trianguloPortada">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <polygon fill="#FFFFFF" points="0,100 100,0 100,100"></polygon>
+        </svg>
+    </div>
+
+    <!--Fin Portada - Inicio Recetas-->
+  
+        <div class="galeria">
+            <div class="container">
+                <h4>Cociná rico y sano</h4>
+                <h2>Recetas Muffcakes</h2>
+  
+            <nav>
+                <li><a href="../recetas.html">Ver todas</a></li>
+                <li><a href="muffins.html" class="active">Muffins</a></li>
+                <li><a href="cupcakes.html">Cupcakes</a></li>
+            </nav>
+  
+            <div class="recetas">
+                <div class="row"> <!--Inicio de Fila-->
+                    <div class="col-sm-4">
+                        <a href="../recetas/muffins/besos-de-miel.html">
+                            <article>
+                                <div class="imagen">
+                                    <img src="../media/recetas/besos-de-miel-portada.jpg" alt="Besos de Miel">
+                                </div>
+                                <div class="categoria">Muffin • Dulce</div>
+                                <h3>Besos de Miel</h3>
+                                <p>Unidades: 12 • Tiempo de Elaboración: 30 minutos • Dificultad: Baja</p>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="../recetas/muffins/capuchino.html">
+                            <article>
+                                <div class="imagen">
+                                    <img src="../media/recetas/capuchino-portada.jpg" alt="Capuchino">
+                                </div>
+                                <div class="categoria">Muffin • Dulce</div>
+                                <h3>Capuchino</h3>
+                                <p>Unidades: 12 • Tiempo de Elaboración: 50 minutos • Dificultad: Baja</p>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="../recetas/muffins/feliz-halloween.html">
+                            <article>
+                                <div class="imagen">
+                                    <img src="../media/recetas/feliz-halloween-portada.jpg" alt="Feliz Halloween">
+                                </div>
+                                <div class="categoria">Muffin • Dulce</div>
+                                <h3>Feliz Halloween</h3>
+                                <p>Unidades: 24 • Tiempo de Elaboración: 40 minutos • Dificultad: Baja</p>
+                            </article>
+                        </a>
+                    </div>
+                </div> <!--Fin de Fila-->
+                <div class="row"> <!--Inicio de Fila-->
+                    <div class="col-sm-4">
+                        <a href="../recetas/muffins/navidad.html">
+                            <article>
+                                <div class="imagen">
+                                    <img src="../media/recetas/navidad-portada.jpg" alt="Navidad">
+                                </div>
+                                <div class="categoria">Muffin • Dulce</div>
+                                <h3>Navidad</h3>
+                                <p>Unidades: 12 • Tiempo de Elaboración: 1 hora • Dificultad: Baja</p>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="../recetas/muffins/aperitivos-de-gambas.html">
+                            <article>
+                                <div class="imagen">
+                                    <img src="../media/recetas/aperitivo-de-gambas-portada.jpg" alt="Aperitivos de Gambas">
+                                </div>
+                                <div class="categoria">Muffin • Salado</div>
+                                <h3>Aperitivos de Gambas</h3>
+                                <p>Unidades: 6 • Tiempo de Elaboración: 50 minutos • Dificultad: Baja</p>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="../recetas/muffins/bacon-y-queso.html">
+                            <article>
+                                <div class="imagen">
+                                    <img src="../media/recetas/bacon-y-queso-portada.jpg" alt="Bacón y Queso">
+                                </div>
+                                <div class="categoria">Muffin • Salado</div>
+                                <h3>Bacón y Queso</h3>
+                                <p>Unidades: 12 • Tiempo de Elaboración: 50 minutos • Dificultad: Baja</p>
+                            </article>
+                        </a>
+                    </div>
+                </div> <!--Fin de Fila-->
+            </div>
+        </div>
+
+    <!--Fin Recetas - Inicio Footer-->
 
     <footer>
-        <div>
-            <p>Redes sociales</p>
-            <a href="https://www.facebook.com/"><img src="../media/img/fb-logo.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com/"><img src="../media/img/ig-logo.png" alt="Instagram"></a>
-            <a href="https://www.twitter.com/"><img src="../media/img/tw-logo.png" alt="Twitter"></a>
+        <div class="container-fluid row grid text-center">
+            <div class="col-md-3 col-sm-3">
+                <h4>Consultas</h4>
+                <a href="mailto:info@muffcakes.com"><p>info@muffcakes.com</p></a>
+            </div>
+            <div class="col-md-3 col-sm-2">
+                <a href="#"><img src="../media/logo-footer.png" alt="Boton para subir" width="100px"></a>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <div>
+                    <a href="https://www.facebook.com" target="_blank"><img src="../media/fb-logo.png" alt="Boton página de Facebook" width="25px"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="../media/ig-logo.png" alt="Boton página de Instagram" width="25px"></a>
+                    <a href="https://www.twitter.com" target="_blank"><img src="../media/tw-logo.png" alt="Boton página de Twitter" width="25px"></a>                        
+                    <div class="text-center">
+                        <p>©2021 Muffcakes</p>
+                    </div>
+                </div>
+            </div>           
         </div>
-        <p style="text-align: center;">© 2021 Muffcakes. Reservados todos los derechos.</p>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="../informacion.html">Informacion</a></li>
-            <li><a href="../recetas.html">Recetas</a>
-            <li><a href="../terminos.html">Terminos</a></li>
-            <li><a href="../consultas.html">Consultas</a></li>
-        </ul>
     </footer>
+
+<!--Fin Footer - Fin General-->
+
+<script src="../styles/bootstrap/bootstrap.bundle.js"></script>
+
 </body>
 </html>

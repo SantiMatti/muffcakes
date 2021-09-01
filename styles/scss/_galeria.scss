@@ -1,0 +1,118 @@
+@import "colores";
+.galeria {
+text-align: center;
+padding: 10px 0 50px;
+}
+.galeria nav {
+padding-top: 20px;
+}
+.galeria nav ul {
+margin: 0;
+padding: 0;
+}
+.galeria nav li {
+list-style: none;
+display: inline-block;
+padding: 0 25px;
+}
+.galeria nav a {
+font-size: 12px;
+font-weight: 700;
+color: $c-medio;
+padding: 5px 0;
+}
+.galeria nav a:hover {
+color: $c-oscuro;
+}
+.galeria nav a.active {
+color: $c-oscuro;
+font-style: oblique;
+}
+@media (max-width: 767px) {
+.galeria {
+    padding: 50px 0 200px;
+}
+}
+.galeria h4 {
+color: $c-medio;
+}
+.galeria h3 {
+font-weight: 900;
+color: $c-oscuro;
+margin: 0 0 25px;
+}
+@media (min-width: 768px) {
+.galeria h3 {
+    font-size: 36px;
+}
+}
+@media (min-width: 992px) {
+.galeria h3 {
+    font-size: 42px;
+}
+}
+@media (min-width: 1200px) {
+.galeria h3 {
+    font-size: 48px;
+}
+}
+@media (max-width: 767px) {
+.galeria h3 {
+    font-size: 32px;
+}
+}
+.galeria .recetas {
+margin-top: 40px;
+}
+.galeria .recetas .row {
+margin-right: 0;
+margin-left: 0;
+}
+.galeria .recetas .col-sm-3 {
+padding-right: 0;
+padding-left: 0;
+}
+.galeria .recetas a article {
+display: block;
+margin: 0 15px 60px;
+}
+@media (max-width: 767px) {
+.galeria .recetas a article {
+    margin: 0 10px 40px;
+}
+}
+.galeria .recetas a article .imagen {
+-webkit-transition: all 0.4s ease;
+-moz-transition: all 0.4s ease;
+-o-transition: all 0.4s ease;
+transition: all 0.4s ease;
+}
+.galeria .recetas a article .imagen img {
+width: 100%;
+}
+.galeria .recetas a article .categoria {
+color: $c-medio;
+font-size: 12px;
+font-weight: 600;
+padding: 26px 0 8px;
+}
+.galeria .recetas a article h3 {
+font-size: 18px;
+font-weight: 500;
+color: $c-oscuro;
+line-height: 1em;
+margin-bottom: 10px;
+}
+.galeria .recetas a article p {
+font-size: 14px;
+font-weight: 400;
+color: $c-medio;
+margin: 0;
+}
+.galeria .recetas a:hover article .imagen {
+opacity: 0.8;
+-webkit-transition: all 0.4s ease;
+-moz-transition: all 0.4s ease;
+-o-transition: all 0.4s ease;
+transition: all 0.4s ease;
+}

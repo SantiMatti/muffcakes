@@ -1,88 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;0,800;1,100;1,500;1,800&display=swap" rel="stylesheet">
-    <link runat="server" rel="icon" href="media/img/icono.png" type="image/x-icon" />
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/consultas.css" />
     <title>Muffcakes • Consultas</title>
+    <link rel="shortcut icon" type="image/jpg" href="media/icono.png"/>
+    <meta name="description" content="Muffcakes es una pagina donde encontraras recetas de Muffins y Cupcakes por igual de la mejor calidad y gustos posibles.">
+    <meta name="keywords" content="Muffins, Cupcakes, Muffcakes, Recetas, Dulce, Salado">
+    <link rel="stylesheet" href="styles/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html"><img src="media/img/logo-marron.png" alt="Logo" width="100"></a>
-            <a href="index.html"><h1>Muffcakes</h1></a>
 
-            <div>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="informacion.html">Informacion</a></li>
-                    <li><a href="recetas.html">Recetas</a>
-                        <ul>
-                            <li><a href="recetas/cupcakes.html">Cupcakes</a></li>
-                            <li><a href="recetas/muffins.html">Muffins</a></li>
-                        </ul>
-                    <li><a href="terminos.html">Terminos</a></li>
-                    <li><a href="consultas.html">Consultas</a></li>
-                </ul>
+    <!--Inicio Header - Incio General-->
+
+    <header>
+
+        <!--NavBar de Bootstrap-->
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="media/logo-muffcakes.png" alt="" height="50px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="informacion.html">Información</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Recetas</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="recetas.html">Ver todas</a></li>
+                                <li><a class="dropdown-item" href="recetas/muffins.html">Muffins</a></li>
+                                <li><a class="dropdown-item" href="recetas/cupcakes.html">Cupcakes</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="terminos.html">Términos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="consultas.html">Consultas</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
-    
-    <section id="form1">
-        <h2>Formulario</h2>
-        <h3>Datos personales</h3>
-        <form method="POST" enctype="application/x-www-form-urlencoded">
-            <p>Ingrese su nombre</p>
-            <input name="name">
-            <p>Ingrese su Apellido</p>
-            <input name="apellido">
-            <h3>Pais</h3>
-            <p>Argentina</p>
-            <input type="radio" name="pais" value="argentina">
-            <p>Otro</p>
-            <input type="radio" name="pais" value="otro">
-            
-        </form>
-    </section>
 
-    <section id="form2">
-        <form method="POST" enctype="application/x-www-form-urlencoded">
-            <p>¿De que producto se trata?</p>
-            <select name="opcion">
-                <option valie="C">Cupcake</option>
-                <option valie="M">Muffin</option>
-            </select>
-            <p>Ingrese su comentario, duda o consulta</p>
-            <textarea></textarea>
-        <p>Acepta terminos y condiciones</p>
-        <input type="checkbox" name="acepta" value="1">
-        <h3>Finalizar</h3>
-        <input type="submit" value="Envia el formulario">
-        <input type="reset" value="Borrar el formulario">
-    </form>
-    </section>
+    <!--Fin Header - Inicio Portada-->
+
+    <div class="portada">
+        <div class="titulo">
+          <h3>Muffcakes</h3>
+          <h1>Consultas</h1>
+        </div>
+        <div class="imagen">
+          <img src="media/consultas.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="trianguloPortada">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <polygon fill="#FFFFFF" points="0,100 100,0 100,100"></polygon>
+        </svg>
+    </div>
+
+    <!--Fin Portada - Inicio Formulario-->
+
+    <div class="formulario">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5">
+                    <h2>Formulario para consultas</h2>
+                    <p>Completá el formulario con tus consultas para que podamos ayudarte en lo que necesites! Muchas gracias.</p>
+                    <br>
+                    <form method="POST" enctype="multipart/form-data" action="#">
+                        <input type="hidden" id="frmSubmitHidden" name="frmSubmitHidden" value="1">
+                        <div class="form">
+                            
+                            <label for="frmName">Nombre*  y Apellido</label>
+                                <input type="text" id="frmName" name="frmName" value="" required>
+                            <label for="frmEmail">Email*</label>
+                                <input type="email" id="frmEmail" name="frmEmail" value="" required>
+                            <label for="frmPhone">Teléfono</label>
+                                <input type="number" id="frmPhone" name="frmPhone" value="">
+                            <label for="frmName">Asunto*</label>
+                                <input type="text" id="frmLocalidad" name="frmLocalidad" value="" required>
+                            <label for="frmName">Producto*</label>
+                                <select id="frmArea" name="frmArea" onchange="cambioArea(this.value)" required="">
+                                    <option value="consumidor">Muffins</option>
+                                    <option value="ventas">Cupcakes</option>
+                                </select>
+                            <label for="frmComentarios">Mensaje*</label>
+                                <textarea rows="5" id="frmComentarios" name="frmComentarios" required></textarea>
+                            <div class="text-center">
+                                <button type="submit" class="botonFormulario">Enviar</button>
+                            <button type="reset" class="botonFormulario">Borrar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-5 col-sm-offset-1 text-center">
+                    <h2>Contacto por fuera</h2>
+                    <p><strong>Tel.</strong><a href="tel:+5491112345678"> +54 9 11 1234-5678</a></p>
+                    <p><strong>Email</strong><a href="mailto:info@muffcakes.com"> info@muffcakes.com</a></p>
+                    <p><strong>Facebook</strong><a href="https://www.facebook.com"> MuffcakesFB</a></p>
+                    <p><strong>Instagram</strong><a href="https://www.facebook.com"> @MuffcakesIG</a></p>
+                    <p><strong>Twitter</strong><a href="https://www.facebook.com"> @MuffcakesTW</a></p>
+                    <p><strong>#Muffcakes</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Fin Formulario - Inicio Footer-->
 
     <footer>
-        <div>
-            <p>Redes sociales</p>
-            <a href="https://www.facebook.com/"><img src="media/img/fb-logo.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com/"><img src="media/img/ig-logo.png" alt="Instagram"></a>
-            <a href="https://www.twitter.com/"><img src="media/img/tw-logo.png" alt="Twitter"></a>
+        <div class="container-fluid row grid text-center">
+            <div class="col-md-3 col-sm-3">
+                <h4>Consultas</h4>
+                <a href="mailto:info@muffcakes.com"><p>info@muffcakes.com</p></a>
+            </div>
+            <div class="col-md-3 col-sm-2">
+                <a href="#"><img src="media/logo-footer.png" alt="Boton para subir" width="100px"></a>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <div>
+                    <a href="https://www.facebook.com" target="_blank"><img src="media/fb-logo.png" alt="Boton página de Facebook" width="25px"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="media/ig-logo.png" alt="Boton página de Instagram" width="25px"></a>
+                    <a href="https://www.twitter.com" target="_blank"><img src="media/tw-logo.png" alt="Boton página de Twitter" width="25px"></a>                        
+                    <div class="text-center">
+                        <p>©2021 Muffcakes</p>
+                    </div>
+                </div>
+            </div>           
         </div>
-        <p style="text-align: center;">© 2021 Muffcakes. Reservados todos los derechos.</p>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="informacion.html">Informacion</a></li>
-            <li><a href="recetas.html">Recetas</a>
-            <li><a href="terminos.html">Terminos</a></li>
-            <li><a href="consultas.html">Consultas</a></li>
-        </ul>
     </footer>
+
+    <!--Fin Footer - Fin General-->
+
+    <script src="styles/bootstrap/bootstrap.bundle.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,205 @@
+@import "colores";
+.intro {
+background: white;
+position: relative;
+width: 100%;
+}
+.intro article {
+text-align: center;
+padding: 20px 0 40px;
+position: relative;
+z-index: 2;
+right: 0;
+left: 0;
+top: -20px;
+}
+@media (min-width: 1200px) {
+.intro article {
+    max-width: 800px;
+    margin: 0 auto;
+}
+}
+@media (max-width: 767px) {
+.intro article {
+    padding: 40px 0 30px;
+}
+}
+.intro article h4 {
+font-weight: 500;
+font-size: 18px;
+color: $c-medio;
+margin: 0 0 5px;
+}
+.intro article h1 {
+font-weight: 900;
+color: $c-oscuro;
+margin: 0 0 25px;
+}
+@media (min-width: 768px) {
+.intro article h1 {
+    font-size: 36px;
+}
+}
+@media (min-width: 992px) {
+.intro article h1 {
+    font-size: 42px;
+}
+}
+@media (min-width: 1200px) {
+.intro article h1 {
+    font-size: 48px;
+}
+}
+@media (max-width: 767px) {
+.intro article h1 {
+    font-size: 32px;
+}
+}
+.intro article p {
+font-weight: 400;
+font-size: 16px;
+color: $c-moscuro;
+line-height: 1.6em;
+margin-bottom: 40px;
+}
+.intro article .puntitos {
+display: block;
+-webkit-transition: all 0.4s ease;
+-moz-transition: all 0.4s ease;
+-o-transition: all 0.4s ease;
+transition: all 0.4s ease;
+}
+.intro article .puntitos:hover {
+-webkit-transition: all 0.4s ease;
+-moz-transition: all 0.4s ease;
+-o-transition: all 0.4s ease;
+transition: all 0.4s ease;
+transform: translatey(5px);
+}
+.noticia {
+padding: 56px 0 80px;
+text-align: center;
+}
+.noticia h4 {
+color: $c-medio;
+margin-top: 100px;
+}
+@media (max-width: 767px) {
+.noticia h4 {
+    margin-top: 40px;
+}
+}
+.noticia h1 {
+font-weight: 900;
+color: $c-oscuro;
+margin: 0 0 25px;
+}
+@media (min-width: 768px) {
+.noticia h1 {
+    font-size: 42px;
+}
+}
+@media (min-width: 992px) {
+.noticia h1 {
+    font-size: 55px;
+}
+}
+@media (min-width: 1200px) {
+.noticia h1 {
+    font-size: 66px;
+}
+}
+@media (max-width: 767px) {
+.noticia h1 {
+    font-size: 32px;
+}
+}
+.noticia h2 {
+color: $c-oscuro;
+font-weight: 900;
+font-size: 24px;
+margin-bottom: 22px;
+}
+.noticia p {
+font-weight: 400;
+font-size: 16px;
+color: $c-moscuro;
+line-height: 1.6em;
+}
+.noticia ul {
+margin: 0;
+padding: 0 0 0 25px;
+}
+.noticia li {
+font-weight: 400;
+font-size: 16px;
+color: $c-moscuro;
+line-height: 1.6em;
+}
+.contenido-prod {
+padding: 56px 0 80px;
+}
+.contenido-prod p {
+font-weight: 400;
+font-size: 16px;
+color: $c-moscuro;
+line-height: 1.6em;
+}
+.contenido-prod ul {
+margin: 0;
+padding: 0 0 0 25px;
+}
+.contenido-prod li {
+font-weight: 400;
+font-size: 16px;
+color: $c-moscuro;
+line-height: 1.6em;
+}
+.contacto {
+margin: 50px 0;
+}
+.contacto h2 {
+color: $c-oscuro;
+font-weight: 900;
+font-size: 24px;
+}
+.contacto p {
+font-size: 16px;
+color: $c-moscuro;
+font-weight: 400;
+line-height: 1.6em;
+}
+.contacto .form label {
+font-weight: 500;
+color: $c-oscuro;
+font-size: 16px;
+display: block;
+margin-bottom: 7px;
+}
+.contacto .form input {
+width: 100%;
+font-size: 16px;
+padding: 10px;
+color: $c-mclaro;
+border: 1px solid $c-oscuro;
+margin-bottom: 30px;
+}
+.contacto .form textarea {
+width: 100%;
+font-size: 16px;
+padding: 10px;
+color: $c-mclaro;
+border: 1px solid $c-oscuro;
+margin-bottom: 30px;
+}
+.contacto .form select {
+width: 100%;
+font-size: 16px;
+padding: 10px;
+color: $c-mclaro;
+border: 1px solid $c-oscuro;
+margin-bottom: 30px;
+}
+.contacto .form button {
+margin-top: 30px;
+}

@@ -1,139 +1,181 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;0,800;1,100;1,500;1,800&display=swap" rel="stylesheet">
-    <link runat="server" rel="icon" href="media/img/icono.png" type="image/x-icon" />
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/terminos.css" />
-    <title>Muffcakes • Terminos</title>
+    <title>Muffcakes • Términos</title>
+    <link rel="shortcut icon" type="image/jpg" href="media/icono.png"/>
+    <meta name="description" content="Muffcakes es una pagina donde encontraras recetas de Muffins y Cupcakes por igual de la mejor calidad y gustos posibles.">
+    <meta name="keywords" content="Muffins, Cupcakes, Muffcakes, Recetas, Dulce, Salado">
+    <link rel="stylesheet" href="styles/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html"><img src="media/img/logo-marron.png" alt="Logo" width="100"></a>
-            <a href="index.html"><h1>Muffcakes</h1></a>
 
-            <div>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="informacion.html">Informacion</a></li>
-                    <li><a href="recetas.html">Recetas</a>
-                        <ul>
-                            <li><a href="recetas/cupcakes.html">Cupcakes</a></li>
-                            <li><a href="recetas/muffins.html">Muffins</a></li>
-                        </ul>
-                    <li><a href="terminos.html">Terminos</a></li>
-                    <li><a href="consultas.html">Consultas</a></li>
-                </ul>
+    <!--Inicio Header - Incio General-->
+
+    <header>
+
+        <!--NavBar de Bootstrap-->
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="media/logo-muffcakes.png" alt="" height="50px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="informacion.html">Información</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Recetas</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="recetas.html">Ver todas</a></li>
+                                <li><a class="dropdown-item" href="recetas/muffins.html">Muffins</a></li>
+                                <li><a class="dropdown-item" href="recetas/cupcakes.html">Cupcakes</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="terminos.html">Términos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="consultas.html">Consultas</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
-    
-    <section id="titulo1">
-        <h2>Términos usuales</h2>
-    </section>
 
-    <section id="texto1">
-        <p><span>A fuego lento: </span>Cocción lenta y gradual que se realiza con muy poca llama.</p>
-        <p><span>Almíbar: </span>Resultado de la cocción de azúcar disuelta en agua. Según sean las proporciones y la densidad que adquiere, recibe diferentes nombres o puntos.</p>
-        <p><span>Amasar: </span>Unir con las manos los diferentes ingredientes que componen una masa a fin de hacerla sólida, compacta y homogénea.</p>
-        <p><span>Aromatizar: </span>Añadir a una preparación esencias o condimentos para realzar su sabor y darle un aroma determinado.</p>
-        <p><span>Azúcar glas: </span>Azúcar blanco pulverizado.</p>
-        <p><span>Baño María: </span>Calentar lenta y uniformemente un alimento poniendo la cazuela que lo contiene dentro de otra con agua hirviendo.</p>
-        <p><span>Baño María inverso: </span>Mantener una preparación a baja temperatura sumergiendo el recipiente que la contiene dentro de otro con hielo. Se suele emplear para batir la nata.</p>
-        <p><span>Batir: </span>Mezclar enérgicamente, con movimientos circulares y ascendentes, los ingredientes que componen una crema o una masa, de modo que entre el suficiente aire en la mezcla como para aumentar su volumen.</p>
-        <p><span>Boquilla: </span>Cono de metal o plástico que se acopla al vértice de la magia pastelera para dar diferentes formas a las cremas.</p>
-        <p><span>Canutillo: </span>Cono de papel vegetal empleado como manga pastelera.</p>
-        <p><span>Cobertura: </span>Tipo de crema muy empleada en pastelería que se usa para cubrir tartas y pasteles. También recibe este nombre un tipo de chocolate que se funde fácilmente.</p>
-        <p><span>Cola de pescado: </span>Es uno de los principales ingredientes en la elaboración de las gelatinas. Se suele encontrar en el mercado en forma de láminas o en polvo. También es conocida por el hombre de gelatina neutra.</p>
-        <p><span>Decorar: </span>Adornar y embellecer una preparación culinaria.</p>
-    </section>
+    <!--Fin Header - Inicio Portada-->
 
-    <section id="texto2">
-        <p><span>Engrasar: </span>Untar con un producto graso (manteca, mantequilla o aceite) una fuente, papel de horno o molde para que la masa que se cocine en él no se pegue.</p>
-        <p><span>Espolvorear: </span>Esparcir sobre un alimento un ingrediente en forma de polvo, pequeños granos o virutas.</p>
-        <p><span>Fundir: </span>Derretir alimentos sólidos mediante la acción del calor.</p>
-        <p><span>Glasear: </span>Cubrir la preparación con una capa líquida en cuya preparación, en repostería, suele intervenir el azúcar glas y el agua.</p>
-        <p><span>Manga pastelera: </span>Utensilio de cocina formado por un paño cosido en forma de cono en cuyo vértice truncado se colocan diferentes boquillas. Se emplea para distribuir y dar forma a las cremas.</p>
-        <p><span>Merengue: </span>Preparación hecha a base de claras de huevo batidas a punto de nieve y azúcar. Por lo general, se aromatiza con vainilla y se le añaden otros ingredientes (coco rallado, almendras, etc.) Se puede emplear como cobertura o relleno de tartas y pasteles.</p>
-        <p><span>Montar: </span>Batir un preparado enérgicamente hasta que espese, utilizando para ello un tenedor, varillas o batidora eléctrica.</p>
-        <p><span>Pochar: </span>Freír a fuego lento un alimento en un cazo o sartén hasta que adquiera una consistencia blanda.</p>
-        <p><span>Punto de pomada: </span>Punto que se obtiene trabajando una crema, salsa o mantequilla hasta conseguir una consistencia similar a una pomada. También se denomina así la mantequilla que, por estar a temperatura ambiente, es muy blanda.</p>
-        <p><span>Rebozar: </span>Cubrir un alimento con algún otro ingrediente rallado, molido o en polvo, o bien formado por elementos pequeños (grageas, lámina de almendra, semillas de amapola, etc.).</p>
-        <p><span>Rociar: </span>Verter o esparcir un líquido en gotas muy pequeñas.</p>
-        <p><span>Triturar: </span>Moler o desmenuzar un alimento sin que llegue a pulverizarse.</p>
-        <p><span>Varilla: </span>Utensilio de cocina hecho con alambre que se emplea para batir.</p>
-        
-    </section>
+    <div class="redaccionTextos">
+        <div class="container">
+            <h4>MUFFCAKES</h4>
+            <h1>Términos importantes</h1>
+            <p><strong>En Muffcakes te ofrecemos una sección explicando "Términos usuales" y "Americanismos"</strong></p>
+            <img alt="" src="media/terminos.jpg" style="width: 828px; height: 492px;"><br><br>
+        </div>
+    </div>
 
-    <section id="titulo2">
-        <h2>Índice de americanismos</h2>
-    </section>
+    <!--Fin Portada - Inicio Términos-->
 
-    <section id="texto3">
-        <p><span>Aceite: </span>Oleo.</p>
-        <p><span>Albaricoque: </span>Damasco, albarcoque, chabacano.</p>
-        <p><span>Alcaparra: </span>Papara.</p>
-        <p><span>Almíbar: </span>Jarabe de azúcar, agua dulce, sirope, miel.</p>
-        <p><span>Azúcar glas: </span>Azúcar glacé.</p>
-        <p><span>Bacon: </span>Tocino ahumado, panceta ahumada, tocineta.</p>
-        <p><span>Bizcocho: </span>Biscocho, galleta, cauca.</p>
-        <p><span>Cacahuete: </span>Maní.</p>
-        <p><span>Calabacín: </span>Calabacita, zambo, zapallito, hoco, zapallo, italiano.</p>
-        <p><span>Cereza: </span>Capulín, capulí.</p>
-        <p><span>Chocolate: </span>Cacao, soconusco.</p>
-        <p><span>Crema de leche: </span>Flor de leche.</p>
-        <p><span>Curry: </span>Cary.</p>
-        <p><span>Frambuesa: </span>Mora.</p>
-        <p><span>Fresa: </span>Frutilla.</p>
-        <p><span>Gamba: </span>Camarón, langostino.</p>
-        <p><span>Gelatina: </span>Jaletina, granetina.</p>
-        <p><span>Hierbabuena: </span>Hierbasana, hierbamenta, huacatay.</p>
-        <p><span>Limón: </span>Acitrón, bizuaga.</p>
-    </section>
+    <div class="redaccionTextos">
+        <div class="container col-md-8">
+            <h2>Términos usuales</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p><strong>A fuego lento: </strong>Cocción lenta y gradual que se realiza con muy poca llama.</p>
+                    <p><strong>Almíbar: </strong>Resultado de la cocción de azúcar disuelta en agua. Según sean las proporciones y la densidad que adquiere, recibe diferentes nombres o puntos.</p>
+                    <p><strong>Amasar: </strong>Unir con las manos los diferentes ingredientes que componen una masa a fin de hacerla sólida, compacta y homogénea.</p>
+                    <p><strong>Aromatizar: </strong>Añadir a una preparación esencias o condimentos para realzar su sabor y darle un aroma determinado.</p>
+                    <p><strong>Azúcar glas: </strong>Azúcar blanco pulverizado.</p>
+                    <p><strong>Baño María: </strong>Calentar lenta y uniformemente un alimento poniendo la cazuela que lo contiene dentro de otra con agua hirviendo.</p>
+                    <p><strong>Baño María inverso: </strong>Mantener una preparación a baja temperatura sumergiendo el recipiente que la contiene dentro de otro con hielo. Se suele emplear para batir la nata.</p>
+                    <p><strong>Batir: </strong>Mezclar enérgicamente, con movimientos circulares y ascendentes, los ingredientes que componen una crema o una masa, de modo que entre el suficiente aire en la mezcla como para aumentar su volumen.</p>
+                    <p><strong>Boquilla: </strong>Cono de metal o plástico que se acopla al vértice de la magia pastelera para dar diferentes formas a las cremas.</p>
+                    <p><strong>Canutillo: </strong>Cono de papel vegetal empleado como manga pastelera.</p>
+                    <p><strong>Cobertura: </strong>Tipo de crema muy empleada en pastelería que se usa para cubrir tartas y pasteles. También recibe este nombre un tipo de chocolate que se funde fácilmente.</p>
+                    <p><strong>Cola de pescado: </strong>Es uno de los principales ingredientes en la elaboración de las gelatinas. Se suele encontrar en el mercado en forma de láminas o en polvo. También es conocida por el hombre de gelatina neutra.</p>
+                    <p><strong>Decorar: </strong>Adornar y embellecer una preparación culinaria.</p>
+                    <p><strong>Engrasar: </strong>Untar con un producto graso (manteca, mantequilla o aceite) una fuente, papel de horno o molde para que la masa que se cocine en él no se pegue.</p>
+                </div>
+                <div class="col-md-6">
+                    <p><strong>Espolvorear: </strong>Esparcir sobre un alimento un ingrediente en forma de polvo, pequeños granos o virutas.</p>
+                    <p><strong>Fundir: </strong>Derretir alimentos sólidos mediante la acción del calor.</p>
+                    <p><strong>Glasear: </strong>Cubrir la preparación con una capa líquida en cuya preparación, en repostería, suele intervenir el azúcar glas y el agua.</p>
+                    <p><strong>Manga pastelera: </strong>Utensilio de cocina formado por un paño cosido en forma de cono en cuyo vértice truncado se colocan diferentes boquillas. Se emplea para distribuir y dar forma a las cremas.</p>
+                    <p><strong>Merengue: </strong>Preparación hecha a base de claras de huevo batidas a punto de nieve y azúcar. Por lo general, se aromatiza con vainilla y se le añaden otros ingredientes (coco rallado, almendras, etc.) Se puede emplear como cobertura o relleno de tartas y pasteles.</p>
+                    <p><strong>Montar: </strong>Batir un preparado enérgicamente hasta que espese, utilizando para ello un tenedor, varillas o batidora eléctrica.</p>
+                    <p><strong>Pochar: </strong>Freír a fuego lento un alimento en un cazo o sartén hasta que adquiera una consistencia blanda.</p>
+                    <p><strong>Punto de pomada: </strong>Punto que se obtiene trabajando una crema, salsa o mantequilla hasta conseguir una consistencia similar a una pomada. También se denomina así la mantequilla que, por estar a temperatura ambiente, es muy blanda.</p>
+                    <p><strong>Rebozar: </strong>Cubrir un alimento con algún otro ingrediente rallado, molido o en polvo, o bien formado por elementos pequeños (grageas, lámina de almendra, semillas de amapola, etc.).</p>
+                    <p><strong>Rociar: </strong>Verter o esparcir un líquido en gotas muy pequeñas.</p>
+                    <p><strong>Triturar: </strong>Moler o desmenuzar un alimento sin que llegue a pulverizarse.</p>
+                    <p><strong>Varilla: </strong>Utensilio de cocina hecho con alambre que se emplea para batir.</p>
+                </div>
+            </div>
+            <h2>Índice de Americanismos</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p><strong>Aceite: </strong>Oleo.</p>
+                    <p><strong>Albaricoque: </strong>Damasco, albarcoque, chabacano.</p>
+                    <p><strong>Alcaparra: </strong>Papara.</p>
+                    <p><strong>Almíbar: </strong>Jarabe de azúcar, agua dulce, sirope, miel.</p>
+                    <p><strong>Azúcar glas: </strong>Azúcar glacé.</p>
+                    <p><strong>Bacon: </strong>Tocino ahumado, panceta ahumada, tocineta.</p>
+                    <p><strong>Bizcocho: </strong>Biscocho, galleta, cauca.</p>
+                    <p><strong>Cacahuete: </strong>Maní.</p>
+                    <p><strong>Calabacín: </strong>Calabacita, zambo, zapallito, hoco, zapallo, italiano.</p>
+                    <p><strong>Cereza: </strong>Capulín, capulí.</p>
+                    <p><strong>Chocolate: </strong>Cacao, soconusco.</p>
+                    <p><strong>Crema de leche: </strong>Flor de leche.</p>
+                    <p><strong>Curry: </strong>Cary.</p>
+                    <p><strong>Frambuesa: </strong>Mora.</p>
+                    <p><strong>Fresa: </strong>Frutilla.</p>
+                    <p><strong>Gamba: </strong>Camarón, langostino.</p>
+                    <p><strong>Gelatina: </strong>Jaletina, granetina.</p>
+                    <p><strong>Hierbabuena: </strong>Hierbasana, hierbamenta, huacatay.</p>
+                    <p><strong>Limón: </strong>Acitrón, bizuaga.</p>
+                </div>
+                <div class="col-md-6">
+                    <p><strong>Maicena: </strong>Capi.</p>
+                    <p><strong>Mantequilla: </strong>Manteca.</p>
+                    <p><strong>Manzana: </strong>Pero, perón.</p>
+                    <p><strong>Melocotón: </strong>Durazno.</p>
+                    <p><strong>Merengue: </strong>Besito.</p>
+                    <p><strong>Mora: </strong>Nato.</p>
+                    <p><strong>Nata liquida: </strong>Crema de leche sin batir.</p>
+                    <p><strong>Nuez: </strong>Coca.</p>
+                    <p><strong>Pan de molde: </strong>Pan inglés, pan sándwich, cuadrado, pan de caja.</p>
+                    <p><strong>Pasas: </strong>Uva pasa, uva.</p>
+                    <p><strong>Pastel: </strong>Budín.</p>
+                    <p><strong>Patata: </strong>Papa.</p>
+                    <p><strong>Pimienta: </strong>Pebre.</p>
+                    <p><strong>Piña: </strong>Ananas, abcaxí.</p>
+                    <p><strong>Plátano: </strong>Banana, banana, cambur, pacoba.</p>
+                    <p><strong>Pomelo: </strong>Toronja, mamplemusa.</p>
+                    <p><strong>Puerro: </strong>Ajo-porro, porro.</p>
+                    <p><strong>Tomate: </strong>Jitomate.</p>
+                    <p><strong>Zanahoria: </strong>Azanoria.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <section id="texto4">
-        <p><span>Maicena: </span>Capi.</p>
-        <p><span>Mantequilla: </span>Manteca.</p>
-        <p><span>Manzana: </span>Pero, perón.</p>
-        <p><span>Melocotón: </span>Durazno.</p>
-        <p><span>Merengue: </span>Besito.</p>
-        <p><span>Mora: </span>Nato.</p>
-        <p><span>Nata liquida: </span>Crema de leche sin batir.</p>
-        <p><span>Nuez: </span>Coca.</p>
-        <p><span>Pan de molde: </span>Pan inglés, pan sándwich, cuadrado, pan de caja.</p>
-        <p><span>Pasas: </span>Uva pasa, uva.</p>
-        <p><span>Pastel: </span>Budín.</p>
-        <p><span>Patata: </span>Papa.</p>
-        <p><span>Pimienta: </span>Pebre.</p>
-        <p><span>Piña: </span>Ananas, abcaxí.</p>
-        <p><span>Plátano: </span>Banana, banana, cambur, pacoba.</p>
-        <p><span>Pomelo: </span>Toronja, mamplemusa.</p>
-        <p><span>Puerro: </span>Ajo-porro, porro.</p>
-        <p><span>Tomate: </span>Jitomate.</p>
-        <p><span>Zanahoria: </span>Azanoria.</p>
-    </section>
+    <!--Fin Términos - Inicio Footer-->
 
     <footer>
-        <div>
-            <p>Redes sociales</p>
-            <a href="https://www.facebook.com/"><img src="media/img/fb-logo.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com/"><img src="media/img/ig-logo.png" alt="Instagram"></a>
-            <a href="https://www.twitter.com/"><img src="media/img/tw-logo.png" alt="Twitter"></a>
+        <div class="container-fluid row grid text-center">
+            <div class="col-md-3 col-sm-3">
+                <h4>Consultas</h4>
+                <a href="mailto:info@muffcakes.com"><p>info@muffcakes.com</p></a>
+            </div>
+            <div class="col-md-3 col-sm-2">
+                <a href="#"><img src="media/logo-footer.png" alt="Boton para subir" width="100px"></a>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <div>
+                    <a href="https://www.facebook.com" target="_blank"><img src="media/fb-logo.png" alt="Boton página de Facebook" width="25px"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="media/ig-logo.png" alt="Boton página de Instagram" width="25px"></a>
+                    <a href="https://www.twitter.com" target="_blank"><img src="media/tw-logo.png" alt="Boton página de Twitter" width="25px"></a>                        
+                    <div class="text-center">
+                        <p>©2021 Muffcakes</p>
+                    </div>
+                </div>
+            </div>           
         </div>
-        <p style="text-align: center;">© 2021 Muffcakes. Reservados todos los derechos.</p>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="informacion.html">Informacion</a></li>
-            <li><a href="recetas.html">Recetas</a>
-            <li><a href="terminos.html">Terminos</a></li>
-            <li><a href="consultas.html">Consultas</a></li>
-        </ul>
     </footer>
+
+<!--Fin Footer - Fin General-->
+
+<script src="styles/bootstrap/bootstrap.bundle.js"></script>
+
 </body>
 </html>

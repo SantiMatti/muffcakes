@@ -1,0 +1,138 @@
+@import "colores";
+.noticias-page {
+text-align: center;
+padding: 10px 0 50px;
+}
+.noticias-page nav {
+padding-top: 20px;
+}
+.noticias-page nav ul {
+margin: 0;
+padding: 0;
+}
+.noticias-page nav li {
+list-style: none;
+display: inline-block;
+padding: 0 25px;
+}
+.noticias-page nav a {
+font-size: 12px;
+font-weight: 700;
+color: $c-medio;
+padding: 5px 0;
+}
+.noticias-page nav a:hover {
+color: $c-oscuro;
+}
+.noticias-page nav a.active {
+color: $c-oscuro;
+font-style: oblique;
+}
+@media (max-width: 767px) {
+.noticias-page {
+    padding: 50px 0 200px;
+}
+}
+.noticias-page h4 {
+color: $c-medio;
+}
+.noticias-page h3 {
+font-weight: 900;
+color: $c-oscuro;
+margin: 0 0 25px;
+}
+@media (min-width: 768px) {
+.noticias-page h3 {
+    font-size: 36px;
+}
+}
+@media (min-width: 992px) {
+.noticias-page h3 {
+    font-size: 42px;
+}
+}
+@media (min-width: 1200px) {
+.noticias-page h3 {
+    font-size: 48px;
+}
+}
+@media (max-width: 767px) {
+.noticias-page h3 {
+    font-size: 32px;
+}
+}
+.noticias-page .grid {
+margin-top: 40px;
+}
+.noticias-page .grid .row {
+margin-right: 0;
+margin-left: 0;
+}
+.noticias-page .grid .col-sm-3 {
+padding-right: 0;
+padding-left: 0;
+}
+.noticias-page .grid a article {
+display: block;
+margin: 0 15px 60px;
+}
+@media (max-width: 767px) {
+.noticias-page .grid a article {
+    margin: 0 10px 40px;
+}
+}
+.noticias-page .grid a article .imagen {
+-webkit-transition: all 0.4s ease;
+-moz-transition: all 0.4s ease;
+-o-transition: all 0.4s ease;
+transition: all 0.4s ease;
+}
+.noticias-page .grid a article .imagen img {
+width: 100%;
+}
+.noticias-page .grid a article .txt {
+position: absolute;
+top: 60px;
+text-align: center;
+color: red;
+z-index: 1;
+right: 0;
+left: 0;
+}
+.noticias-page .grid a article .txt img {
+display: block;
+width: 58px;
+height: 57px;
+margin: 5px auto;
+-webkit-transition: all 0.4s ease;
+-moz-transition: all 0.4s ease;
+-o-transition: all 0.4s ease;
+transition: all 0.4s ease;
+transform: scale(1, 1);
+}
+.noticias-page .grid a article .date {
+color: $c-medio;
+font-size: 12px;
+font-weight: 600;
+padding: 26px 0 8px;
+}
+.noticias-page .grid a article h3 {
+font-size: 18px;
+font-weight: 500;
+color: $c-oscuro;
+line-height: 1em;
+margin-bottom: 10px;
+}
+.noticias-page .grid a article p {
+font-size: 14px;
+font-weight: 400;
+color: $c-medio;
+margin: 0;
+}
+.noticias-page .grid a:hover article .imagen {
+opacity: 0.8;
+-webkit-transition: all 0.4s ease;
+-moz-transition: all 0.4s ease;
+-o-transition: all 0.4s ease;
+transition: all 0.4s ease;
+}

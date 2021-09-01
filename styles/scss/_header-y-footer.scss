@@ -1,0 +1,72 @@
+@import "colores";
+
+/* Inicio Header*/
+
+header {
+z-index: 10;
+background: rgba(255, 255, 255, 0.75);
+position: fixed;
+right: 0;
+left: 0;
+}
+header nav a {
+font-weight: 700;
+font-size: 15px;
+padding: 11px 0;
+}
+.navbar-light .navbar-nav .nav-link {
+color: $c-medio;
+}
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+color: $c-oscuro;
+}
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .nav-link.active {
+color: $c-oscuro;
+font-style: oblique;
+}
+.dropdown-item {
+color: $c-oscuro;
+}
+.dropdown-menu {
+text-align: center;
+background-color: rgba(255, 255, 255, 0.75);
+border: 1px solid $c-oscuro
+}
+.dropdown-item:hover, .dropdown-item:focus {
+color: $c-medio;
+font-weight: bold;
+background-color: transparent;
+}
+.dropdown-item.active, .dropdown-item:active {
+color: $c-mclaro;
+text-decoration: none;
+background-color: $c-oscuro;
+font-style: oblique;
+font-weight: bold;
+}
+
+/* Fin Header*/
+
+/* Inicio Footer*/
+
+footer {
+background: $c-oscuro;
+}
+footer h4 {
+font-size: 14px;
+font-weight: 500;
+color: $c-medio;
+}
+footer p {
+color: $c-mclaro;
+font-weight: 400;
+font-size: 12px;
+}
+footer .grid {
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* Fin Footer*/

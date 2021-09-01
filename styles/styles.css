@@ -1,168 +1,565 @@
-@charset "UTF-8";
-* {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 62.5%;
-  /*Cambios generales*/ }
-
-body {
-  background-color: #C6A37C;
-  display: grid;
-  margin: 0; }
-
-section {
-  font-weight: 500;
-  font-size: 3rem;
-  padding: 1rem; }
-
+@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@400;900&family=Lexend+Deca:wght@400;500;600;700&display=swap");
 a {
-  color: #322623;
-  text-decoration: none; }
-
-.body__header {
-  grid-area: header;
-  position: sticky;
-  /*Se queda siempre visible arriba*/
-  top: 0;
-  padding: 0 1rem 0 1rem; }
-
-.header__nav {
-  border-radius: 1rem;
-  padding: 1rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
-  background-color: #A37555; }
-
-nav ul {
-  border: solid #322623;
-  background-color: #603E33;
-  border-radius: 1rem;
-  margin: 0;
-  padding: 0;
-  text-align: center; }
-
-nav ul a {
-  color: #C6A37C; }
-
-nav li {
-  display: inline-block;
-  position: relative;
-  font-size: 2rem;
-  padding: 0.5rem; }
-
-nav ul a:hover {
-  background-color: #C6A37C;
-  color: #322623;
-  /*Cambiar de color la letra cuando se esta sobre cada palabra*/ }
-
-nav ul ul {
-  position: absolute;
-  display: none; }
-
-nav ul ul li {
-  display: block; }
-
-nav ul li:hover ul {
-  display: block;
-  background-color: #603E33;
-  border-radius: 1rem; }
-
-.body__footer {
-  color: #603E33;
-  grid-area: footer;
-  font-size: 3rem;
-  padding: 1rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
-  background-color: #A37555; }
-
-footer img {
-  width: 3rem; }
-
-footer ul {
-  text-align: right;
-  list-style: none;
-  font-size: 2.5rem; }
-
-footer img:hover {
-  transform: scale(1.1); }
-
-@media only screen and (min-width: 0) {
-  /*Dispositivos pequeños*/
-  body {
-    grid-template-rows: auto auto auto auto auto;
-    grid-template-areas: "header" "cuerpo" "texto" "botones" "footer"; } }
-
-@media only screen and (min-width: 768px) {
-  /*Dispositivos medianos*/
-  body {
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas: "header header" "cuerpo texto" "botones botones" "footer footer"; } }
-
-@media only screen and (min-width: 1024px) {
-  /*Dispositivos grandes*/
-  body {
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas: "header header" "cuerpo texto" "cuerpo botones" "footer footer"; } }
-
-section img {
-  border-radius: 1rem;
-  border: solid #603E33 0.5rem; }
-
-.nav__h1--titulo {
-  font-size: 5rem;
-  font-weight: 800;
-  font-style: italic;
-  text-align: center;
-  color: #603E33; }
-
-.section__h2--subtitulo {
-  font-size: 3rem;
-  text-align: center;
-  text-transform: capitalize;
-  color: #6C4932; }
-
-.section__button {
-  font-size: 5rem;
-  -webkit-text-stroke: 0.1rem #C6A37C;
-  color: #603E33;
-  border-radius: 1rem;
-  background-image: url(../media/img/boton.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; }
-
-.section__button--a {
-  font-size: 5rem;
-  -webkit-text-stroke: 0.1rem #C6A37C;
-  color: #603E33; }
+  text-decoration: none;
+  color: #6C4932;
+  border: none !important; }
 
 a:hover {
-  color: #603E33; }
+  color: #322623; }
 
-section button:hover {
-  transform: scale(1.1);
-  /*El boton aumentara su tamaño para que sea mas facil de seleccionar*/ }
-
-.section__p--texto {
-  font-size: 1.5rem;
+h4 {
+  font-weight: 500;
+  font-size: 18px;
   color: #6C4932;
-  text-align: justify; }
+  margin: 0 0 5px; }
 
-/*Secciones del grid*/
-#cuerpo {
-  grid-area: cuerpo;
+h3 {
+  font-size: 48px;
+  font-weight: 900;
+  color: #6C4932;
+  margin: 0 0 25px; }
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #603E33;
+  line-height: 1.6em; }
+
+h1, h2 {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-family: 'Arima Madurai', cursive; }
+
+h3, h4, h5, h6, p, body, html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-family: 'Lexend Deca', sans-serif; }
+
+a, a:hover {
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
+
+a:hover {
+  text-decoration: none; }
+
+.botonFormulario {
+  font-size: 14px;
+  font-weight: 500;
+  color: #322623;
+  display: inline-block;
+  border: 1px solid #322623;
+  padding: 15px 65px; }
+
+.botonFormulario:hover {
+  background: #A37555;
+  color: #322623; }
+
+.botonFormulario:focus {
+  text-decoration: none; }
+
+.botonGeneral {
+  font-size: 12px;
+  font-weight: 700;
+  color: #322623;
+  display: inline-block;
+  border: 1px solid #322623 !important;
+  padding: 12px 55px;
+  background: #A37555; }
+
+.botonGeneral:hover {
+  background: transparent; }
+
+.botonGeneral:focus {
+  text-decoration: none; }
+
+/* Inicio Header*/
+header {
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.75);
+  position: fixed;
+  right: 0;
+  left: 0; }
+
+header nav a {
+  font-weight: 700;
+  font-size: 15px;
+  padding: 11px 0; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: #6C4932; }
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+  color: #322623; }
+
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .nav-link.active {
+  color: #322623;
+  font-style: oblique; }
+
+.dropdown-item {
+  color: #322623; }
+
+.dropdown-menu {
   text-align: center;
-  margin-bottom: 3rem; }
+  background-color: rgba(255, 255, 255, 0.75);
+  border: 1px solid #322623; }
 
-#texto {
-  grid-area: texto;
-  align-self: center;
-  padding: 0 10rem 0 10rem; }
+.dropdown-item:hover, .dropdown-item:focus {
+  color: #6C4932;
+  font-weight: bold;
+  background-color: transparent; }
 
-#botones {
-  grid-area: botones;
+.dropdown-item.active, .dropdown-item:active {
+  color: #A37555;
+  text-decoration: none;
+  background-color: #322623;
+  font-style: oblique;
+  font-weight: bold; }
+
+/* Fin Header*/
+/* Inicio Footer*/
+footer {
+  background: #322623; }
+
+footer h4 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #6C4932; }
+
+footer p {
+  color: #A37555;
+  font-weight: 400;
+  font-size: 12px; }
+
+footer .grid {
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0; }
+
+/* Fin Footer*/
+/* Inicio Portada Carrousel*/
+.carrousel .titulo {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 50%;
+  transform: translatey(-50%);
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  z-index: 2; }
+
+.carrousel .titulo h3 {
+  font-weight: 500;
+  color: white;
+  text-shadow: 0px 0px 5px #322623;
+  margin: 0; }
+
+.carrousel .titulo h2 {
+  font-weight: 900;
+  font-size: 66px;
+  color: white;
+  text-shadow: 0px 0px 5px #322623;
+  margin: 0; }
+
+@media (min-width: 767px) {
+  .carrousel .titulo {
+    top: 30%; }
+  .carrousel .titulo h3 {
+    font-size: 18px; }
+  .carrousel .titulo h2 {
+    font-size: 46px; } }
+
+@media (min-width: 992px) {
+  .carrousel .titulo {
+    top: 50%; }
+  .carrousel .titulo h3 {
+    font-size: 21px; }
+  .carrousel .titulo h2 {
+    font-size: 56px; } }
+
+@media (min-width: 1200px) {
+  .carrousel .titulo h2 {
+    font-size: 66px; } }
+
+@media (max-width: 767px) {
+  .carrousel .titulo {
+    top: 20%; }
+  .carrousel .titulo h3 {
+    font-size: 18px; }
+  .carrousel .titulo h2 {
+    font-size: 36px; } }
+
+/* Fin Portada Carrousel*/
+/* Inicio Portada General*/
+.portada {
+  position: relative;
+  display: block;
+  height: 70vh; }
+
+.portada .titulo {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 50%;
+  transform: translatey(-50%);
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  z-index: 2; }
+
+.portada .titulo h3 {
+  font-weight: 500;
+  color: white;
+  text-shadow: 0px 0px 5px #322623;
+  margin: 0; }
+
+.portada .titulo h1 {
+  font-weight: 900;
+  font-size: 66px;
+  color: white;
+  text-shadow: 0px 0px 5px #322623;
+  margin: 0; }
+
+@media (min-width: 768px) {
+  .portada .titulo h3 {
+    font-size: 18px; }
+  .portada .titulo h1 {
+    font-size: 46px; } }
+
+@media (min-width: 992px) {
+  .portada .titulo h3 {
+    font-size: 21px; }
+  .portada .titulo h1 {
+    font-size: 56px; } }
+
+@media (min-width: 1200px) {
+  .portada .titulo h1 {
+    font-size: 66px; } }
+
+@media (max-width: 767px) {
+  .portada .titulo h3 {
+    font-size: 18px; }
+  .portada .titulo h1 {
+    font-size: 36px; } }
+
+.portada .imagen {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #322623; }
+
+.portada .imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: middle center;
+  opacity: 0.85; }
+
+.trianguloPortada {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  left: 0;
+  display: block; }
+
+.trianguloPortada svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 15vw; }
+
+/* Fin Portada General*/
+.introduccion {
+  background: white;
+  position: relative;
+  width: 100%; }
+
+.introduccion article {
+  text-align: center;
+  padding: 20px 0 40px;
+  position: relative;
+  z-index: 2;
+  right: 0;
+  left: 0;
+  top: -20px; }
+
+@media (min-width: 1200px) {
+  .introduccion article {
+    max-width: 800px;
+    margin: 0 auto; } }
+
+@media (max-width: 767px) {
+  .introduccion article {
+    padding: 40px 0 30px; } }
+
+.introduccion article h4 {
+  font-weight: 500;
+  font-size: 18px;
+  color: #6C4932;
+  margin: 0 0 5px; }
+
+.introduccion article h1 {
+  font-weight: 900;
+  color: #322623;
+  margin: 0 0 25px; }
+
+@media (min-width: 768px) {
+  .introduccion article h1 {
+    font-size: 36px; } }
+
+@media (min-width: 992px) {
+  .introduccion article h1 {
+    font-size: 42px; } }
+
+@media (min-width: 1200px) {
+  .introduccion article h1 {
+    font-size: 48px; } }
+
+@media (max-width: 767px) {
+  .introduccion article h1 {
+    font-size: 32px; } }
+
+.introduccion article p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #603E33;
+  line-height: 1.6em;
+  margin-bottom: 40px; }
+
+.redaccionTextos {
+  padding: 56px 0 80px;
   text-align: center; }
+
+.redaccionTextos h4 {
+  color: #6C4932;
+  margin-top: 100px; }
+
+@media (max-width: 767px) {
+  .redaccionTextos h4 {
+    margin-top: 40px; } }
+
+.redaccionTextos h1 {
+  font-weight: 900;
+  color: #322623;
+  margin: 0 0 25px; }
+
+@media (min-width: 768px) {
+  .redaccionTextos h1 {
+    font-size: 42px; } }
+
+@media (min-width: 992px) {
+  .redaccionTextos h1 {
+    font-size: 55px; } }
+
+@media (min-width: 1200px) {
+  .redaccionTextos h1 {
+    font-size: 66px; } }
+
+@media (max-width: 767px) {
+  .redaccionTextos h1 {
+    font-size: 32px; } }
+
+.redaccionTextos h2 {
+  color: #322623;
+  font-weight: 900;
+  font-size: 24px;
+  margin-bottom: 22px; }
+
+.redaccionTextos p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #603E33;
+  line-height: 1.6em; }
+
+.redaccionTextos ul {
+  margin: 0;
+  padding: 0 0 0 25px; }
+
+.redaccionTextos li {
+  font-weight: 400;
+  font-size: 16px;
+  color: #603E33;
+  line-height: 1.6em; }
+
+.redaccionRecetas {
+  padding: 56px 0 80px; }
+
+.redaccionRecetas p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #603E33;
+  line-height: 1.6em; }
+
+.redaccionRecetas ul {
+  margin: 0;
+  padding: 0 0 0 25px; }
+
+.redaccionRecetas li {
+  font-weight: 400;
+  font-size: 16px;
+  color: #603E33;
+  line-height: 1.6em; }
+
+.formulario {
+  margin: 50px 0; }
+
+.formulario h2 {
+  color: #322623;
+  font-weight: 900;
+  font-size: 24px; }
+
+.formulario p {
+  font-size: 16px;
+  color: #603E33;
+  font-weight: 400;
+  line-height: 1.6em; }
+
+.formulario .form label {
+  font-weight: 500;
+  color: #322623;
+  font-size: 16px;
+  display: block;
+  margin-bottom: 7px; }
+
+.formulario .form input {
+  width: 100%;
+  font-size: 16px;
+  padding: 10px;
+  color: #A37555;
+  border: 1px solid #322623;
+  margin-bottom: 30px; }
+
+.formulario .form textarea {
+  width: 100%;
+  font-size: 16px;
+  padding: 10px;
+  color: #A37555;
+  border: 1px solid #322623;
+  margin-bottom: 30px; }
+
+.formulario .form select {
+  width: 100%;
+  font-size: 16px;
+  padding: 10px;
+  color: #A37555;
+  border: 1px solid #322623;
+  margin-bottom: 30px; }
+
+.formulario .form button {
+  margin-top: 30px; }
+
+.galeria {
+  text-align: center;
+  padding: 10px 0 50px; }
+
+.galeria nav {
+  padding-top: 20px; }
+
+.galeria nav ul {
+  margin: 0;
+  padding: 0; }
+
+.galeria nav li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 25px; }
+
+.galeria nav a {
+  font-size: 12px;
+  font-weight: 700;
+  color: #6C4932;
+  padding: 5px 0; }
+
+.galeria nav a:hover {
+  color: #322623; }
+
+.galeria nav a.active {
+  color: #322623;
+  font-style: oblique; }
+
+@media (max-width: 767px) {
+  .galeria {
+    padding: 50px 0 200px; } }
+
+.galeria h4 {
+  color: #6C4932; }
+
+.galeria h3 {
+  font-weight: 900;
+  color: #322623;
+  margin: 0 0 25px; }
+
+@media (min-width: 768px) {
+  .galeria h3 {
+    font-size: 36px; } }
+
+@media (min-width: 992px) {
+  .galeria h3 {
+    font-size: 42px; } }
+
+@media (min-width: 1200px) {
+  .galeria h3 {
+    font-size: 48px; } }
+
+@media (max-width: 767px) {
+  .galeria h3 {
+    font-size: 32px; } }
+
+.galeria .recetas {
+  margin-top: 40px; }
+
+.galeria .recetas .row {
+  margin-right: 0;
+  margin-left: 0; }
+
+.galeria .recetas .col-sm-3 {
+  padding-right: 0;
+  padding-left: 0; }
+
+.galeria .recetas a article {
+  display: block;
+  margin: 0 15px 60px; }
+
+@media (max-width: 767px) {
+  .galeria .recetas a article {
+    margin: 0 10px 40px; } }
+
+.galeria .recetas a article .imagen {
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
+
+.galeria .recetas a article .imagen img {
+  width: 100%; }
+
+.galeria .recetas a article .categoria {
+  color: #6C4932;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 26px 0 8px; }
+
+.galeria .recetas a article h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #322623;
+  line-height: 1em;
+  margin-bottom: 10px; }
+
+.galeria .recetas a article p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #6C4932;
+  margin: 0; }
+
+.galeria .recetas a:hover article .imagen {
+  opacity: 0.8;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
