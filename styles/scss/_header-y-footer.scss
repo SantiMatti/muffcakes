@@ -61,6 +61,7 @@ footer p {
 color: $c-mclaro;
 font-weight: 400;
 font-size: 1.2rem;
+padding-top: 5px;
 }
 footer .grid {
     justify-content: center;
@@ -72,8 +73,8 @@ footer .padd {
 }
 
 footer .padd img {
-    padding: 0 2px;
-    width: 3rem;
+    padding: 0 5px;
+    width: 4rem;
 }
 
 /* Fin Footer*/

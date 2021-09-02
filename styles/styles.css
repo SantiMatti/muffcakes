@@ -136,7 +136,8 @@ footer h4 {
 footer p {
   color: #A37555;
   font-weight: 400;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  padding-top: 5px; }
 
 footer .grid {
   justify-content: center;
@@ -147,8 +148,8 @@ footer .padd {
   margin-top: 20px; }
 
 footer .padd img {
-  padding: 0 2px;
-  width: 3rem; }
+  padding: 0 5px;
+  width: 4rem; }
 
 /* Fin Footer*/
 /* Inicio Portada Carrousel*/
